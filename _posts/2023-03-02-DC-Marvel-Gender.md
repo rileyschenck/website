@@ -26,7 +26,7 @@ Scrolling up with your mouse inside one of the two charts allows you to zoom in 
 
 <div id="altair-chart-1"></div>
  
-#Takeaways:
+# Takeaways:
 
 There are far more male characters than female characters, especially among the characters that have appeared most in each comic.
 
