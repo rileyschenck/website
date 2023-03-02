@@ -1,41 +1,40 @@
 ---
-title: "Example: Embedding Altair & Hvplot Charts"
-date: 2019-04-13
+title: "Explore gender differences between DC and Marvel Characters with Altair"
+date: 2023-03-02
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
-excerpt: "Embedding interactive charts on static pages using Jekyll."
+excerpt: "Use an interactive Altair chart to explore the history of DC and Marvel characters broken down by gender and good vs bad"
 altair-loader:
-  altair-chart-1: "charts/measlesAltair.json"
-hv-loader:
-  hv-chart-1: ["charts/measlesHvplot.html", "500"] # second argument is the height
+  altair-chart-1: "charts/DC-Marvel-Altair.json"
+
 toc: true
 toc_sticky: true
 ---
 
-This post will show examples of embedding interactive charts produced using [Altair](https://altair-viz.github.io) and [Hvplot](https://hvplot.pyviz.org/).
+## Exploring DC and Marvel Characters' history, filtering by gender and alignment (good vs bad).
 
-## Altair Example
+The following interactive altair chart allows you to view all the DC and Marvel characters released over time, where the x-axis
+shows the release date of each character, and the y-axis shows the total number of appearances by the character in their 
+respective comic. 
 
-Below is a chart of the incidence of measles since 1928 for the 50 US states.
+You can filter for male and female characters by clicking on one of the red or green squares inside the legend on the upper right
+hand corner of the chart. 
+
+Hovering over a specific point shows you that character's name, total number of appearances, and alignment.
+
+Scrolling up with your mouse inside one of the two charts allows you to zoom in on the chart.
 
 <div id="altair-chart-1"></div>
+ 
+#Takeaways:
 
-This was produced using Altair and embedded in this static web page. Note that you can also display Python code on this page:
+There are far more male characters than female characters, especially among the characters that have appeared most in each comic.
 
-```python
-import altair as alt
-alt.renderers.enable('notebook')
-```
+The most popular good characters appear many more times than the most popular bad characters.
 
-## HvPlot Example
+If you zoom in on the charts filtering for bad men vs bad women, it's apparent that the gender disparity is especially pronounced 
+among the villians, with male villians being far more likely.
 
-Lastly, the measles incidence produced using the HvPlot package:
 
-<div id="hv-chart-1"></div>
 
-## Notes
 
-- See the [raw source code](https://raw.githubusercontent.com/MUSA-550-Fall-2020/github-pages-starter/master/_posts/2019-04-13-measles-charts.md) of this post for details on how these charts were embedded.
-- See the [lecture 13A slides](https://github.com/MUSA-550-Fall-2020/week-13/blob/master/lecture-13A.ipynb) for the code that produced these plots.
-
-**Important: When embedding charts, you will likely need to adjust the width/height of the charts before embedding them in the page so they fit nicely when embedded.**
