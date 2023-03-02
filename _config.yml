@@ -16,13 +16,13 @@ minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale: "en-US"
-title: "MUSA 550: Geospatial Data Science in Python"
+title: "Data Science Projects"
 title_separator: "-"
-name: "Nick Hand"
-description: "Displaying cool data visualizations"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: # the subpath of your site, e.g. "/blog"
-repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+name: "Riley Schenck"
+description: "aaaaa"
+url: # the base hostname & protocol for your site e.g. "https://rileyschenck.github.io"
+baseurl: # the subpath of your site, e.g. "/website"
+repository: # GitHub username/repo-name e.g. "rileyschenck/website"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
@@ -105,11 +105,11 @@ analytics:
 
 # Site Author
 author:
-  name: "Nick Hand"
+  name: "Riley Schenck"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Director of Finance, Data, and Policy, Philadelphia Controller"
-  location: "Philadelphia"
-  email:
+  bio: "University of Michigan Masters in Applied Data Science Student"
+  location: "Sacramento"
+  email: rileysch@umich.edu
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
