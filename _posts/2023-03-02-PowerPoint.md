@@ -19,9 +19,9 @@ toc_sticky: true
 
 Indicators we were told to for the class:
 
-<img src="assets/images/chickenkitchen.JPG" alt="">
+<img src="/assets/images/chickenkitchen.JPG" alt="">
 asdf
-<img src="assets/images/chickenkitchenpng.png" alt="">
+<img src="/assets/images/chickenkitchenpng.png" alt="">
 
 
  
