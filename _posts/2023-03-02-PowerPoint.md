@@ -13,4 +13,6 @@ toc_sticky: true
 
 Indicators we were told to for the class:
 
-{% include youtube.html id="dg9_cwtIsqE&ab_channel=RS" %}
+[![Final video of fixing issues in your code in VS Code]
+(https://img.youtube.com/vi/JLMbpiywVxQ/maxresdefault.jpg)]
+(https://www.youtube.com/watch?v=JLMbpiywVxQ)
