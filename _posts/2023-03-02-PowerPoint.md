@@ -13,4 +13,4 @@ toc_sticky: true
 
 Indicators we were told to for the class:
 
-{% include youtube.html id=”JLMbpiywVxQ” %}
+{% include youtube.html id="dg9_cwtIsqE&ab_channel=RS" %}
