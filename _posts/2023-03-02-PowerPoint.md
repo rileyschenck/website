@@ -3,7 +3,7 @@ title: "Data analysis powerpoint presentation example (with audio)"
 date: 2023-03-02
 published: true
 tags: [ powerpoint, riley, schenck]
-excerpt: "From a 'Communicating Data Results' class: Is Lubbock or Sacramento a better location for a new fast food restaurant? ![](/assets/images/chickenkitchen.JPG)"
+excerpt: "From a 'Communicating Data Results' class: Is Lubbock or Sacramento a better location for a new fast food restaurant? ![](/assets/images/chickenkitchenpng.png)"
 
 toc: true
 toc_sticky: true
@@ -13,12 +13,11 @@ toc_sticky: true
 
 Indicators we were told to for the class:
 ![](/assets/images/chickenkitchen.JPG)
-
+dfsdf
 ![](/assets/images/chickenkitchenpng.png)
 
 
 asdf
 
-![(/assets/images/chickenkitchen.JPG)](https://www.youtube.com/watch?v=dg9_cwtIsqE&ab_channel=RS)
 
 
