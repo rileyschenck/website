@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 ---
 
-## Many men and traditional genders. 
+## Many men and traditional genders
 
 As you can see in the interactive stacked bar chart below, only a very few DC or Marvel characters do not fit neatly into 
 traditional gender roles (grouped into the Non-Traditional or Not Identified Characters bars), and there have been more than 
@@ -23,7 +23,7 @@ the most appearances are at the bottom of each stacked bar chart.
 
 <div id="altair-chart-2"></div>
 
-## Exploring DC and Marvel Characters' history, filtering by gender and alignment (good vs bad).
+## Exploring DC and Marvel Characters' history, filtering by gender and alignment (good vs bad)
 
 Let's eliminate the neutral characters and focus on our heroes and villians.
 
@@ -40,7 +40,7 @@ Scrolling up with your mouse inside one of the two charts allows you to zoom in 
 
 <div id="altair-chart-1"></div>
  
-## Takeaways:
+## Takeaways
 
 There are far more male characters than female characters, especially among the characters that have appeared most in each comic.
 
