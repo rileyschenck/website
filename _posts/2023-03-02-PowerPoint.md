@@ -14,14 +14,11 @@ toc_sticky: true
 
 Indicators we were told to for the class:
 
-![distances-abandoned-cars]({{ site.url }}{{ site.baseurl }}/assets/images/distance_to_abandoned_cars.png)
 
-
-sdfs
 
 ![distances-abandoned-cars]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)
 
+sdfs
 
-
-
+{% include youtube.html id=”JLMbpiywVxQ” %}
 
