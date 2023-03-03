@@ -13,4 +13,7 @@ toc_sticky: true
 
 Indicators we were told to for the class:
 
-{% include youtube.html id="dg9_cwtIsqE&ab_channel=RS" %}
+
+
+https://user-images.githubusercontent.com/124864861/222714270-cedbc892-c9d4-48a2-bc06-09055c904745.mp4
+
