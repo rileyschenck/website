@@ -14,6 +14,9 @@ toc_sticky: true
 Indicators we were told to for the class:
 ![](/assets/images/chickenkitchen.JPG)
 
+![](/assets/images/chickenkitchenpng.png)
+
+
 asdf
 
 ![(/assets/images/chickenkitchen.JPG)](https://www.youtube.com/watch?v=dg9_cwtIsqE&ab_channel=RS)
