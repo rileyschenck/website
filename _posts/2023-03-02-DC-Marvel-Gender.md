@@ -5,8 +5,8 @@ published: true
 tags: [ marvel, dc, gender, altair]
 excerpt: "Use interactive Altair charts to explore gender representation in DC and Marvel comics"
 altair-loader:
-  altair-chart-1: "charts/DC-Marvel-Altair.json"
-  altair-chart-2: "charts/DC-Marvel-stacked-Altair.json"
+  altair-chart-1: "charts/DC-Marvel-stacked-Altair.json"
+  altair-chart-2: "charts/DC-Marvel-Altair.json"
   
 toc: true
 toc_sticky: true
@@ -21,7 +21,7 @@ double the number of appearances by male characters compared to female character
 If you hover your mouse over the stacked bar chart below you can see information on each character, where the characters with
 the most appearances are at the bottom of each stacked bar chart.
 
-<div id="altair-chart-2"></div>
+<div id="altair-chart-1"></div>
 
 ## Exploring DC and Marvel Characters' history, filtering by gender and alignment (good vs bad)
 
@@ -38,7 +38,7 @@ Hovering over a specific point shows you that character's name, total number of 
 
 Scrolling up with your mouse inside one of the two charts allows you to zoom in on the chart.
 
-<div id="altair-chart-1"></div>
+<div id="altair-chart-2"></div>
  
 ## Takeaways
 
