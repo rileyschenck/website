@@ -18,11 +18,11 @@ toc_sticky: true
 ## Why Lubbock is a better location than Sacramento
 
 Indicators we were told to for the class:
- [![Watch the video](/assets/images/chickenkitchenpng.png)]([https://youtu.be/vt5fpE0bzSY](https://www.youtube.com/watch?v=dg9_cwtIsqE&ab_channel=RS))
 sdfs
-<img src="/assets/images/chickenkitchen.JPG" alt="">
-asdf
-<img src="/assets/images/chickenkitchenpng.png" alt="">
+
+![distances-abandoned-cars]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)
+
+
 
 
 
