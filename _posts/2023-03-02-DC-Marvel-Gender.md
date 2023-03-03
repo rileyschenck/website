@@ -4,8 +4,7 @@ date: 2023-03-02
 published: true
 tags: [ marvel, dc, gender, altair]
 excerpt: "Use interactive Altair charts to explore gender representation in DC and Marvel comics
-![](https://github.com/rileyschenck/website/blob/master/assets/images/dcmarvel.JPG)
-"
+![]"/assets/images/dcmarvel.jpg""
 altair-loader:
   altair-chart-1: "charts/DC-Marvel-stacked-Altair.json"
   altair-chart-2: "charts/DC-Marvel-Altair.json"
