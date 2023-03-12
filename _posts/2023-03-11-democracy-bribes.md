@@ -1,8 +1,8 @@
 ---
-title: "Example: Embedding Matplotlib Images"
-date: 2019-04-17
+title: "Democracy and Corruption"
+date: 2023-03-11
 published: true
-tags: [dataviz, matplotlib]
+tags: [dataviz]
 excerpt: "Comparing democracy duration to percentage of people who report paying bribes"
 toc: true
 toc_sticky: true
