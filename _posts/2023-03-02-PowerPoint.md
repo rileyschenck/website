@@ -19,5 +19,4 @@ Indicators we were told to for the class:
 
 sdfs
 
-{% include youtube.html id=”JLMbpiywVxQ” %}
 
