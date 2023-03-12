@@ -15,4 +15,4 @@ I created the following presentation as part of a 'Communicating Data Results' c
 
 [![Final video of fixing issues in your code in VS Code](https://img.youtube.com/vi/dg9_cwtIsqE/maxresdefault.jpg)](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=6s&ab_channel=RS)
 
-
+{% include youtube.html id="dg9_cwtIsqE" %}
