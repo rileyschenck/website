@@ -13,7 +13,8 @@ toc_sticky: true
 
 Indicators we were told to for the class:
 
-[![Final video of fixing issues in your code in VS Code]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=4s&ab_channel=RS)
+
+![]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)(https://www.youtube.com/watch?v=dg9_cwtIsqE&t=4s&ab_channel=RS)
 
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)
