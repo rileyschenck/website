@@ -1,5 +1,5 @@
 ---
-title: "Data analysis powerpoint presentation example (with audio)"
+title: "Data Analysis PowerPoint Presentation"
 date: 2023-03-02
 published: true
 tags: [ powerpoint, riley, schenck]
@@ -9,19 +9,10 @@ toc: true
 toc_sticky: true
 ---
 
-## Why Lubbock is a better location than Sacramento
+### Powerpoint presentation
 
-Indicators we were told to for the class:
-
+Follow the link to my PowerPoint presentation on YouTube. We were tasked with finding and presenting data to evaluate two counties for a fictional chicken sandwhich franchise based on a series of success indicators provided to us for the assignment:
 
 [![Final video of fixing issues in your code in VS Code](https://img.youtube.com/vi/dg9_cwtIsqE/maxresdefault.jpg)](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=6s&ab_channel=RS)
 
-[![Final video of fixing issues in your code in VS Code]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=4s&ab_channel=RS)
 
-
-![]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)
-
-sdfs
-
-
- [![Final video of fixing issues in your code in VS Code](https://img.youtube.com/vi/JLMbpiywVxQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=JLMbpiywVxQ)
