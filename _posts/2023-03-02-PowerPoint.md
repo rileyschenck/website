@@ -14,7 +14,9 @@ toc_sticky: true
 Indicators we were told to for the class:
 
 
-![({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=4s&ab_channel=RS)
+[![Final video of fixing issues in your code in VS Code](https://img.youtube.com/vi/JLMbpiywVxQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=JLMbpiywVxQ)
+
+[![Final video of fixing issues in your code in VS Code]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=4s&ab_channel=RS)
 
 
 ![]({{ site.url }}{{ site.baseurl }}/assets/images/chickenkitchenpng.png)
