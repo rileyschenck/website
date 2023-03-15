@@ -9,7 +9,7 @@ toc_sticky: true
 read_time: false
 ---
 
-# Comparing democracy duration to percentage of people who report paying bribes
+## Comparing democracy duration to percentage of people who report paying bribes
 
 I investigated the relationship between how long a country has or hasn't been a democracy and the percentage of people in
 that country that report paying a bribe over the past year. After combining a dataset from Harvard that codes the democratic histories of countries and a dataset from
