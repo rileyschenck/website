@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 ---
 
-### Data analysis slidedeck presentation recorded on Zoom and upoaded to YouTube
+## Data analysis slidedeck presentation recorded on Zoom and upoaded to YouTube
 
 I created the following presentation as part of a 'Communicating Data Results' class in my Masters in Applied Data Science at the University of Michigan. We were tasled with finding and presenting data to evaluate two counties for a fictional chicken sandwhich franchise based on a series of success indicators provided to us for the assignment:
 
