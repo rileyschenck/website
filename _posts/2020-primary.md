@@ -4,9 +4,9 @@ date: 2020-03-07
 published: true
 tags: [ 2020 democratic primary, riley, schenck]
 excerpt: "How We Got Here: Mapping the Key Moments of the Democratic Primary" 
-
 toc: true
 toc_sticky: true
+read_time: false
 ---
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/Image1.png)
