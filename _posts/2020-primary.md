@@ -46,7 +46,7 @@ Interestingly, the candidate who benefited most in the polls from her progressiv
 
 The beginning of the end for Warren appears to have been a poll following the New Hampshire debate that found voters there viewed Sanders as the most electable candidate against Trump, demonstrating once again that voters in this primary do not care about well thought-out plans as much as they care about defeating President Trump.
 
-####Money Alone Can’t Buy An Election
+#### Money Alone Can’t Buy An Election
 When Michael Bloomberg dropped out of the race following his Super Tuesday defeat, he had already spent $600 million on his campaign. To put that into perspective, in a little over 3 months Bloomberg spent almost as much as the $646 million Donald Trump spent on his entire 2016 campaign, and just as Hillary Clinton’s $1.2 billion was not enough to defeat Trump, Bloomberg’s hundreds of millions were not enough to get him more than a paltry showing on Super Tuesday, and he dropped out of the race that night.
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/Image5.png)
