@@ -8,8 +8,8 @@ toc: true
 toc_sticky: true
 read_time: false
 ---
-## Comparing democracy duration to the percentage of people who report paying bribes
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/fig1.png)
+## Comparing democracy duration to the percentage of people who report paying bribes
 The scatterplot above explores the relationship between how long a country has or hasn't been a democracy (x-axis) and the percentage of people in
 that country that report paying a bribe over the past year (y-axis), including regression lines to visualize the strength of the two correlations. 
 
