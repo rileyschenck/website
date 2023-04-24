@@ -42,11 +42,11 @@ Scrolling up with your mouse inside one of the two charts allows you to zoom in 
  
 ## Takeaways
 
-There are far more male characters than female characters, especially among the characters that have appeared most in each comic.
+- There are far more male characters than female characters, especially among the characters that have appeared most in each comic.
 
-The most popular good characters appear many more times than the most popular bad characters.
+- The most popular good characters appear many more times than the most popular bad characters.
 
-If you zoom in on the charts filtering for bad men vs bad women, it's apparent that the gender disparity is especially pronounced 
+- If you zoom in on the charts filtering for bad men vs bad women, it's apparent that the gender disparity is especially pronounced 
 among the villians, with male villians being far more likely.
 
 
