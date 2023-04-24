@@ -1,5 +1,5 @@
 ---
-title: "Data Analysis Technical Report and Zoom Presentation"
+title: "Data Analysis Technical Report and Zoom PowerPoint Presentation"
 date: 2023-03-02
 published: true
 tags: [ powerpoint, riley, schenck]
@@ -20,7 +20,11 @@ I created the following technical report slidedeck and zoom presentation as part
   - Car culture (as opposed to reliance on public transportation)
   - Location near a highway and other upscale fast food 
 
+### Technical Report Slidedeck
+
 The technical report slidedeck can be found at [here](https://docs.google.com/presentation/d/1ONRH9LRi2XdkFAUeXH-zILzOdMf6TWcvuiRZ21udx-g/edit?usp=sharing). 
+
+### Live Zoom PowerPoint Presentation
 
 You can find a video of my Zoom presentation that summarizes my technical report below (if the video is taking to long to load into the webpage you can find it on YouTube [here](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=42s&ab_channel=RileySchenck)):
 
