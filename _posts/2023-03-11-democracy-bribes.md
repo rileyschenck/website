@@ -19,11 +19,15 @@ Transparency International that records the percentage of people who reported pa
 
 The trend lines in the chart above show a negative correlation between how long a democratic government has been in power and bribe prevalence and a slight positive correlation between bribe prevalence and the duration of non-democratic governments, suggesting that democracy may be helpful in lowering the prevalence of bribes in a country over time.
 
-We can see that the top 10 countries that report the fewest bribes are mostly democratic countries:
+### Top 10 Countries with the fewest reported bribes
+We can see that the top 10 countries with the fewest reported bribes are mostly democratic countries...
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/Top 10 least corrupt.png)
 
-Whereas the top 10 countries with the highest percentage of people reporting paying bribes in the last year are mostly non-democratic countries:
+### Top 10 Countries with the most reported bribes
+...And the top 10 countries with the highest percentage of people reporting paying bribes in the last year are mostly non-democratic countries:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/Top 10 most corrupt based on percentage that report paying bribe.png)
+
+### Focus on Democratic Countries
 
 Narrowing our focus to just the democratic countries, if we eliminate the outlier of India with the highest percentage out of all countries of people who report paying a bribe in the last year, we see an even stronger negative correlation between the amount of time that a country has been a democracy and the percentage of people who report paying a bribe in the last year. Although we see a decently sized negative correlation between democracy duration and bribe prevalence, we can also see there are other factors at play as some new democracies have relatively low levels of bribe paying, whereas some older democracies (such as India) have higher levels.  
 
