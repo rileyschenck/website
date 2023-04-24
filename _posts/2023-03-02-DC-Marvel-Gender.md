@@ -1,5 +1,5 @@
 ---
-title: "Explore gender differences between DC and Marvel Characters with Altair"
+title: "Exploring gender differences between DC and Marvel Characters with Altair"
 date: 2023-03-02
 published: true
 tags: [ marvel, dc, gender, altair]
