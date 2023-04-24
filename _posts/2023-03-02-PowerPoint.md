@@ -1,5 +1,5 @@
 ---
-title: "Data Analysis Technical Report and Zoom PowerPoint Presentation"
+title: "Market Research Data Analysis and Zoom PowerPoint Presentation"
 date: 2023-03-02
 published: true
 tags: [ powerpoint, riley, schenck]
@@ -9,7 +9,7 @@ toc: true
 toc_sticky: true
 ---
 
-I created the following technical report slidedeck and Zoom PowerPoint presentation as part of a 'Communicating Data Results' class from the Master of Applied Data Science program at the University of Michigan. We were tasked with finding and presenting data to evaluate the prospects of two different counties for a fictional chicken sandwhich franchise based on a series of success indicators provided to us for the assignment:
+I created the following technical report slidedeck and an accompanying PowerPoint presentation on Zoom as part of a 'Communicating Data Results' class from my Master of Applied Data Science program at the University of Michigan. We were tasked with finding and presenting data to evaluate the prospects of two different counties for a fictional chicken sandwhich franchise based on a series of success indicators provided to us for the assignment:
 
   - Household income above the national median
   - Younger population  with room for continued growth
