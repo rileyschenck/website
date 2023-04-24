@@ -8,7 +8,7 @@ excerpt: "From a 'Communicating Data Results' class: Is Lubbock or Sacramento a 
 toc: true
 toc_sticky: true
 ---
-
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/execsummary.png)
 I created the following technical report slidedeck and an accompanying PowerPoint presentation on Zoom as part of a 'Communicating Data Results' class from my Master of Applied Data Science program at the University of Michigan. We were tasked with finding and presenting data to evaluate the prospects of two different counties for a fictional chicken sandwhich franchise based on a series of success indicators provided to us for the assignment:
 
   - Household income above the national median
