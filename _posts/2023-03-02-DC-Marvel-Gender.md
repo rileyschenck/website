@@ -11,17 +11,16 @@ altair-loader:
 toc: true
 toc_sticky: true
 ---
+## Lots of men and traditional genders
 
-## Many men and traditional genders
+<div id="altair-chart-1"></div>
 
-As you can see in the interactive stacked bar chart below, only a very few DC or Marvel characters do not fit neatly into 
+As you can see in the interactive stacked bar chart above, only a few DC or Marvel characters do not fit neatly into 
 traditional gender roles (grouped into the Non-Traditional or Not Identified Characters bars), and there have been more than 
 double the number of appearances by male characters compared to female characters in both comic series.
 
 If you hover your mouse over the stacked bar chart below you can see information on each character, where the characters with
 the most appearances are at the bottom of each stacked bar chart.
-
-<div id="altair-chart-1"></div>
 
 ## Exploring DC and Marvel Characters' history, filtering by gender and alignment (good vs bad)
 
