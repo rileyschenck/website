@@ -22,7 +22,7 @@ I created the following technical report slidedeck and zoom presentation as part
 
 The technical report slidedeck can be found at:
 
-https://docs.google.com/presentation/d/1ONRH9LRi2XdkFAUeXH-zILzOdMf6TWcvuiRZ21udx-g/edit?usp=sharing 
+link: https://docs.google.com/presentation/d/1ONRH9LRi2XdkFAUeXH-zILzOdMf6TWcvuiRZ21udx-g/edit?usp=sharing 
 
 I also created a Zoom presentation of my findings to accompany the technical report (the YouTube video of the Zoom presentatinon below takes a minute to load onto the webpage):
 
