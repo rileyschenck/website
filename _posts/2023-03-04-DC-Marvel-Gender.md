@@ -1,6 +1,6 @@
 ---
 title: "Exploring gender differences between DC and Marvel Characters with Altair"
-date: 2023-03-02
+date: 2023-03-04
 published: true
 tags: [ marvel, dc, gender, altair]
 excerpt: "Use interactive Altair charts to explore gender representation in DC and Marvel comics ![](/assets/images/dcmarvel.JPG) "
