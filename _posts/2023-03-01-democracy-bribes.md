@@ -1,6 +1,6 @@
 ---
 title: "Democracy and Corruption"
-date: 2023-03-11
+date: 2023-03-01
 published: true
 tags: [dataviz]
 excerpt: "Comparing democracy duration to the percentage of people who report paying bribes"
