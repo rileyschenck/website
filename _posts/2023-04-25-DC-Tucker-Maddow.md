@@ -1,9 +1,9 @@
 ---
-title: "Cable Talk Show Topics Comparison"
+title: "Tucker Carlson and Rachel Maddow Topics Comparison"
 date: 2023-04-25
 published: true
 tags: [ powerpoint, riley, schenck]
-excerpt: "Slidedeck from a group project where we compared topics covered by Rachel Maddow and Tucker Carlson in their respective shows" 
+excerpt: "Slidedeck from a group project where we compared how frequently different topics were covered by Rachel Maddow and Tucker Carlson on their respective shows" 
 
 toc: true
 toc_sticky: true
