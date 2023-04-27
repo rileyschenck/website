@@ -3,7 +3,7 @@ title: "A Few Good Women: Visualizing Gender Representation in DC and Marvel Com
 date: 2023-03-04
 published: true
 tags: [ marvel, dc, gender, altair]
-excerpt: "Throughout comic book history there are fewer good characters that are female compared to men, even fewer female bad characters, and very few non-traditional genders"
+excerpt: "Throughout comic book history there are fewer good female characters compared to men, even fewer female bad characters, and very few non-traditional genders"
 altair-loader:
   altair-chart-1: "charts/DC-Marvel-stacked-Altair.json"
   altair-chart-2: "charts/DC-Marvel-Altair.json"
