@@ -1,9 +1,9 @@
 ---
-title: "Exploring gender differences between DC and Marvel Characters with Altair"
+title: "A Few Good Women: Visualizing Gender Representation in DC and Marvel Comics"
 date: 2023-03-04
 published: true
 tags: [ marvel, dc, gender, altair]
-excerpt: "Use interactive Altair charts to explore gender representation in DC and Marvel comics ![](/assets/images/dcmarvel.JPG) "
+excerpt: "Throughout comic book history there are fewer good characters that are female compared to men, even fewer female bad characters, and very few non-traditional genders"
 altair-loader:
   altair-chart-1: "charts/DC-Marvel-stacked-Altair.json"
   altair-chart-2: "charts/DC-Marvel-Altair.json"
