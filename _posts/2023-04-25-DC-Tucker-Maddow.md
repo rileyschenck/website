@@ -16,6 +16,10 @@ In this group project in University of Michigan's Master of Applied Data Science
 
 Our final report can be found [here](https://docs.google.com/presentation/d/1Q1rEi2sCXfN3I_Bh0L4pF_bsf2KKz7Rlt16px0ic7gw/edit?usp=sharing). 
 
+### Github Repository
+
+Our final Github repository for the project can be found [here](https://github.com/rileyschenck/milestoneproject). 
+
 
 
 
