@@ -3,7 +3,7 @@ title: "Analyzing the messaging found in Tucker Carlson's monologues using Chat-
 date: 2023-03-03
 published: true
 tags: [dataviz]
-excerpt: "Querying a database of 918 monologues using Pinecone and Chat-GPT"
+excerpt: "Querying a database of 918 monologues using LangChain, Pinecone and Chat-GPT"
 toc: true
 toc_sticky: true
 read_time: false
