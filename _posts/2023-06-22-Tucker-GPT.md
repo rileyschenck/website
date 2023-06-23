@@ -20,25 +20,25 @@ The monologues were scraped from Fox News' website and cover a period from Novem
 ### (TRIGGER WARNING) Summarizing some of the monologues' most controversial views  
 Can help us understand the messaging on these issues that a segment of the Republican base unfortunately agrees with. 
 
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t4.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t5.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t6.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt4.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt5.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt6.png)
 
 ### (TRIGGER WARNING) Using the angriest pieces of context from Tucker Carlson's monologues to highlight the anger and vitriol used in his messaging
 
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/angry1.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/angry2.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/angry3.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/angry4.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/angry5.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a1.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a2.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a3.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a4.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a5.png)
 
 ### In the world of Carlson, everything is a conspiracy and nobody is to be trusted! Except the conspiracy theorists, of course...
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/jan6.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/c1.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/c2.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/c3.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ctheorists.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct1.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct2.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct3.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct4.png)
 
 ### Angriest pieces of context about "White men" output shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame while talking about issues sorrounding race.
 
