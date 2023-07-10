@@ -8,15 +8,24 @@ toc: true
 toc_sticky: true
 read_time: false
 ---
-
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/deepstate.png)
 Are you someone who misses their nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting against the "Deep State" was actually not an excerpt at all, but Chat-GPT immitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic-sounding Tucker Carlson bot who will rant and rave for as long as your heart desires about any and all of the hot-button topics of the day, just like the good 'ol times! 
 
 I will take you step by step through the process of how you can query and ask questions of Carlson's transcripts, or any document for that matter.
 
-First, a quick overview: The monologue transcripts from Tucker Carlson Tonight were scraped from Fox News' website and cover a period from November 27, 2018 to March 16, 2023. I show the code below for how I scraped the transcripts using Selenium and Beautiful Soup. Feel free to skip over this section if you want to get straight to the nitty gritty of using LangChain and Pinecone to query the transcripts with Chat-GPT. 
+### First, a quick overview:
+Using LangChain, Pinecone, and Chat-GPT to query any documents you have is actually remarkably easy. The web scraping I did to just get the transcripts was the most complicated bit of coding in this process BY FAR. The monologue transcripts from Tucker Carlson Tonight were scraped from Fox News' website and cover a period from November 27, 2018 to March 16, 2023. I show the code below for how I scraped the transcripts using Selenium and Beautiful Soup. Feel free to skip over that section if you want to get straight to the nitty gritty of using LangChain and Pinecone to query the transcripts with Chat-GPT. 
 
-### Web scraping 831 Tucker Carlson monologues from Fox News' website
+Steps:
+1. Scrape the transcripts (skip if you like).
+2. Create single large document that contains all of the Carlson monologue transcripts that I scraped from the web.
+3. Use Langchain's recursive character splitter to break the document into chunks.
+4. Use OpenAIEmbeddings to turn each chunk of text into a vector.
+5. Store the vectors on Pinecone and allow for similarity search between them.
+6. Query the transcripts using Chat-GPT, providing the 20 most relevant chunks of text from the transcripts as context.
+7. Tweak your prompts for Chat-GPT (prompt engineering)
+
+### 1. Web scraping 831 Tucker Carlson monologues from Fox News' website
 Comments explain how I scraped the monolgues from Fox's website:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape1.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape2.png)
@@ -25,14 +34,27 @@ Comments explain how I scraped the monolgues from Fox's website:
 The resulting dataframe containing each Carlson monologue's URL, the date it was published (timestamp), it's title, and the text of the transcript:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dataframe.png)
 
-### Combine texts into a single document 
+### 2. Combine texts into a single document 
 If we want to be able to allow Chat-GPT to query all the transcripts simultaneously we will need to combine them into a single, long document.
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dataframe.png)
 
-### Use Langchain's recursive character splitter to break the document into chunks 
+### 3. Use Langchain's recursive character splitter to break the document into chunks 
 The splitter simply slices the entire document we've created of all the transcripts into 1,000 character chunks of text (about 150 words per chunk). We can make the chunks as large or small as we like, but we want to make sure the chunks are large enough to provide relavant context, while at the same time not being so large that we lose precision. For example, if we ask Chat-GPT what Carlson's monologues say about California, we want the similarity search to pull in the most relevant examples of Carlson ranting about California and provide them as context to Chat-GPT. If the chunks are too small we may miss lots of relevant context, because Carlson may only mention California when he first starts speaking about it, and if the chunk ends before he finishes we will lose any additional context that's not included in that chunk.
 
 On the other hand, if the chunks are too large we may include irrelevant parts of text where Carlson isn't talking about California, and since we only get about 3,000 words of context to provide Chat-GPT, we definitely don't want to waste valuable context space on text that is irrelevant to our query. As you will see below, when the chunks are set to 1,000 characters, we get a maximum of 20 pieces of context to provide Chat-GPT, or in the context of our task, just 20 examples of Carlson talking about California, Democrats, Trump, or whatever we want our Carlson bot to talk about. 
+
+
+### 4. Use OpenAIEmbeddings to turn each chunk of text into a vector.
+
+
+### 5. Store the vectors on Pinecone and allow for similarity search between them.
+
+### 6. Query the transcripts using Chat-GPT,
+ providing the 20 most relevant chunks of text from the transcripts as context.
+ 
+### 7. Tweak your prompts for Chat-GPT (prompt engineering)
+
+
 
 
 ### (TRIGGER WARNING) Summarizing some of the monologues' most controversial views  
