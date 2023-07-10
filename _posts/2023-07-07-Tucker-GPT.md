@@ -75,7 +75,7 @@ And with that we are all set to query our chunks of Tucker Carlson transcripts a
 
 By tweaking our prompt that we input as our query, we can effectively "train" a bot that imitates the most inflamatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relavant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
 
-Before you procede any further, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are desparaging to women and minorities (and I haven't included the angry Tucker Carlson output for 'trans rights' which is downright vile). 
+Before you procede any further, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are desparaging to women and minorities (and I haven't included the angry Tucker Carlson output for 'trans rights' which is downright vile).
 
 #### (TRIGGER WARNING) Summarizing some of the monologues' most controversial views with different prompts
 
@@ -99,7 +99,7 @@ Using the angriest pieces of context from Tucker Carlson's monologues to create 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct3.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct4.png)
 
-#### Angriest pieces of context about "White men" output shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame while talking about issues surrounding race.
+#### The output using the angriest pieces of context about "White men" shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame while talking about issues surrounding race.
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t7.png)
 
