@@ -9,7 +9,7 @@ toc_sticky: true
 read_time: false
 ---
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/replacement.png)
-Are you someone who misses their nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting against the "Deep State" was actually not an excerpt at all, but Chat-GPT immitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic-sounding Tucker Carlson bot who will rant and rave for as long as your heart desires about any and all of the hot-button topics of the day, just like the good 'ol times! 
+Are you someone who misses their nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting about his infamous "replacement theory" was actually not an excerpt at all, but Chat-GPT immitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic-sounding Tucker Carlson bot who will rant and rave for as long as your heart desires about any and all of the hot-button topics of the day, just like the good 'ol times! 
 
 I will take you step by step through the process of how you can query and ask questions of Carlson's transcripts, or any document for that matter.
 
