@@ -71,7 +71,11 @@ And with that we are all set to query our chunks of Tucker Carlson transcripts a
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/query2.png)
 
  
-### 7. Tweak your prompts for Chat-GPT (prompt engineering)
+### 7. Tweak your prompts for Chat-GPT (prompt engineering) to create an Angry Tucker Carlson bot
+
+By tweaking our prompt that we input as our query, we can effectively "train" a bot that imitates the most inflamatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relavant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
+
+Before you procede any further, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are desparaging to women and minorities (and I haven't included the angry Tucker Carlson output for 'trans rights' which is downright vile). 
 
 #### (TRIGGER WARNING) Summarizing some of the monologues' most controversial views with different prompts
 
@@ -80,13 +84,12 @@ And with that we are all set to query our chunks of Tucker Carlson transcripts a
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt6.png)
 
 #### (TRIGGER WARNING) Angry Tucker Bot
-Using the angriest pieces of context from Tucker Carlson's monologues to create an Angry Tucker Bot that highlights the anger and vitriol used in his messaging
+Using the angriest pieces of context from Tucker Carlson's monologues to create an Angry Tucker Bot that imitates the anger and vitriol often used in his messaging. 
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a2.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a3.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a4.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a5.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a1.png)
 
 #### In the world of Carlson, everything is a conspiracy and nobody is to be trusted! Except the conspiracy theorists, of course...
 
