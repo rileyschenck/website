@@ -9,7 +9,7 @@ toc_sticky: true
 read_time: false
 ---
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/replacement.png)
-Are you someone who misses their nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting about his infamous "replacement theory" was actually not an excerpt at all, but Chat-GPT immitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic-sounding Tucker Carlson bot who will rant and rave for as long as your heart desires about any and all of the hot-button topics of the day, just like the good 'ol times! 
+Are you someone who misses their nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting about his infamous "replacement theory" was actually not an excerpt at all, but Chat-GPT imitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic-sounding Tucker Carlson bot who will rant and rave for as long as your heart desires about any and all of the hot-button topics of the day, just like the good 'ol times! 
 
 I will take you step by step through the process of how you can query and ask questions of Carlson's transcripts, or any document for that matter.
 
@@ -18,7 +18,7 @@ Using LangChain, Pinecone, and Chat-GPT to query any documents you have is actua
 
 Steps:
 1. Scrape the transcripts (skip if you like).
-2. Create single large document that contains all of the Carlson monologue transcripts that I scraped from the web.
+2. Create a single large document that contains all of the Carlson monologue transcripts that I scraped from the web.
 3. Use Langchain's recursive character splitter to break the document into chunks.
 4. Use OpenAIEmbeddings to turn each chunk of text into a vector.
 5. Store the vectors on Pinecone and allow for similarity search between them.
@@ -26,7 +26,7 @@ Steps:
 7. Tweak your prompts for Chat-GPT (prompt engineering)
 
 ### 1. Web scraping 831 Tucker Carlson monologues from Fox News' website
-Comments explain how I scraped the monolgues from Fox's website:
+Comments explain how I scraped the monologues from Fox's website:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape1.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape2.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape3.png)
@@ -39,7 +39,7 @@ If we want to be able to allow Chat-GPT to query all the transcripts simultaneou
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/combine.png)
 
 ### 3. Use Langchain's recursive character splitter to break the document into chunks 
-The splitter simply slices the entire document we've created of all the transcripts into 1,000 character chunks of text (about 150 words per chunk). We can make the chunks as large or small as we like, but we want to make sure the chunks are large enough to provide relavant context, while at the same time not being so large that we lose precision. For example, if we ask Chat-GPT what Carlson's monologues say about California, we want the similarity search to pull in the most relevant examples of Carlson ranting about California and provide them as context to Chat-GPT. If the chunks are too small we may miss lots of relevant context, because Carlson may only mention California when he first starts speaking about it, and if the chunk ends before he finishes we will lose any additional context that's not included in that chunk.
+The splitter simply slices the entire document we've created of all the transcripts into 1,000 character chunks of text (about 150 words per chunk). We can make the chunks as large or small as we like, but we want to make sure the chunks are large enough to provide relevant context, while at the same time not being so large that we lose precision. For example, if we ask Chat-GPT what Carlson's monologues say about California, we want the similarity search to pull in the most relevant examples of Carlson ranting about California and provide them as context to Chat-GPT. If the chunks are too small we may miss lots of relevant context, because Carlson may only mention California when he first starts speaking about it, and if the chunk ends before he finishes we will lose any additional context that's not included in that chunk.
 
 On the other hand, if the chunks are too large we may include irrelevant parts of text where Carlson isn't talking about California, and since we only get about 3,000 words of context to provide Chat-GPT, we definitely don't want to waste valuable context space on text that is irrelevant to our query. As you will see below, when the chunks are set to 1,000 characters, we get a maximum of 20 pieces of context to provide Chat-GPT, or in the context of our task, just 20 examples of Carlson talking about California, Democrats, Trump, or whatever we want our Carlson bot to talk about. 
 
@@ -55,11 +55,11 @@ With OpenAI's embeddings, our text is going to be represented by 1,536 numbers, 
 ### 5. Store the vectors on Pinecone as an index and allow for similarity search between them.
 We are going to have a whooooole bunch of vectors (one 1,536 number long vector like the one above for each 150 word chunk of text) and we will need to store them somewhere, and Pinecone is great for that. There are many tutorials online on how to set up an account and get started with your first Pinecone project (it's literally just a few clicks).
 
-To create our index of vectors in Pinecone, we use the Pinecone.from_documents menthod, pass in our docs (the 150 word transcript chunks), our embedding object we created that will turn those chunks into numerical vectors, and the name of our index we've set up in Pinecone.
+To create our index of vectors in Pinecone, we use the Pinecone.from_documents method, pass in our docs (the 150 word transcript chunks), our embedding object we created that will turn those chunks into numerical vectors, and the name of our index we've set up in Pinecone.
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/pinecone2.png)
 
-Then, we define a little function that uses Pinecone's similarity search method to find the top k vectors (the 'k' parameter, in our case the top 20 chunks of text) that have the closest cosine similiarity (the angle between two vectors) to the vector created from the query that we will also be turned into a vector with the same OpenAI embedding method (the 'query' parameter). 
+Then, we define a little function that uses Pinecone's similarity search method to find the top k vectors (the 'k' parameter, in our case the top 20 chunks of text) that have the closest cosine similarity (the angle between two vectors) to the vector created from the query that we will also be turned into a vector with the same OpenAI embedding method (the 'query' parameter). 
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/similarity.png)
 
@@ -71,9 +71,6 @@ And with that we are all set to query our chunks of Tucker Carlson transcripts a
 
  
 ### 7. Tweak your prompts for Chat-GPT (prompt engineering)
-
-
-
 
 ### (TRIGGER WARNING) Summarizing some of the monologues' most controversial views  
 Can help us understand the messaging on these issues that a segment of the Republican base unfortunately agrees with. 
@@ -100,7 +97,7 @@ Prompt:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct3.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct4.png)
 
-### Angriest pieces of context about "White men" output shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame while talking about issues sorrounding race.
+### Angriest pieces of context about "White men" output shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame while talking about issues surrounding race.
 Prompt: 
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t7.png)
