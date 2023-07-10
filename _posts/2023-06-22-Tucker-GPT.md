@@ -1,6 +1,6 @@
 ---
 title: "Building a cheap Tucker Carlson bot using LangChain, Pinecone, Chat-GPT, and 813 Carlson transcripts"
-date: 2023-03-03
+date: 2023-07-07
 published: true
 tags: [dataviz]
 excerpt: "As simple as querying a database of Tucker Carlson's monologues from his Fox News show with Chat-GPT"
@@ -83,8 +83,7 @@ Can help us understand the messaging on these issues that a segment of the Repub
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt6.png)
 
 ### (TRIGGER WARNING) Using the angriest pieces of context from Tucker Carlson's monologues to create a bot based off highlight the anger and vitriol used in his messaging
-
-We have effectively created a Tucker Carlson bot that 
+Prompt: 
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a1.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a2.png)
@@ -93,6 +92,7 @@ We have effectively created a Tucker Carlson bot that
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a5.png)
 
 ### In the world of Carlson, everything is a conspiracy and nobody is to be trusted! Except the conspiracy theorists, of course...
+Prompt: 
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/jan6.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct1.png)
@@ -101,6 +101,7 @@ We have effectively created a Tucker Carlson bot that
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct4.png)
 
 ### Angriest pieces of context about "White men" output shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame while talking about issues sorrounding race.
+Prompt: 
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t7.png)
 
