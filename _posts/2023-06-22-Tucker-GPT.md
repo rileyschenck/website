@@ -67,7 +67,7 @@ Then, we define a little function that uses Pinecone's similarity search method 
 
 And with that we are all set to query our chunks of Tucker Carlson transcripts and make our cheap Tucker bot! 
 
- ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/query.png)
+ ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/query2.png)
 
  
 ### 7. Tweak your prompts for Chat-GPT (prompt engineering)
