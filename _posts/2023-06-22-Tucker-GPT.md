@@ -57,7 +57,7 @@ We are going to have a whooooole bunch of vectors (one 1,536 number long vector 
 
 To create our index of vectors in Pinecone, we use the Pinecone.from_documents menthod, pass in our docs (the 150 word transcript chunks), our embedding object we created that will turn those chunks into numerical vectors, and the name of our index we've set up in Pinecone.
 
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/pinecone.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/pinecone2.png)
 
 Then, we define a little function that uses Pinecone's similarity search method to find the top k vectors (the 'k' parameter, in our case the top 20 chunks of text) that have the closest cosine similiarity (the angle between two vectors) to the vector created from the query that we will also be turned into a vector with the same OpenAI embedding method (the 'query' parameter). 
 
