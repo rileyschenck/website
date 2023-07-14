@@ -12,7 +12,7 @@ altair-loader:
   altair-chart-5: "charts/Revenues-Expenditures.json"
   altair-chart-6: "charts/Revenues-Expenditures-GDP.json"
   altair-chart-7: "charts/GDP-stacked.json"
-  altair-chart-8: "charts/.GDP-line.json"
+  altair-chart-8: "charts/GDP-line.json"
 
 
 toc: true
