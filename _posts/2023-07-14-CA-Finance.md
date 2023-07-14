@@ -6,7 +6,7 @@ tags: [ California, Finance]
 excerpt: "CA Finance"
 altair-loader:
   altair-chart-1: "charts/GDP-line.json"
-  altair-chart-2: "charts/DC-Marvel-Altair.json"
+  altair-chart-2: "charts/totalexpenditures.json"
 
 toc: true
 toc_sticky: true
