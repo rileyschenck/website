@@ -11,5 +11,9 @@ altair-loader:
 toc: true
 toc_sticky: true
 ---
+asdfasdfasdfasd
+asdfasdfasdf
 <div id="altair-chart-1"></div>
+asdfasdf
 <div id="altair-chart-2"></div>
+asdfsdf
