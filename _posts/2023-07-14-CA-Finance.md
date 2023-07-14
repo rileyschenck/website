@@ -35,6 +35,8 @@ toc_sticky: true
 
 <div id="altair-chart-8"></div>
 
+Github Repository with the Jupyter Notebook that has the code for the Pandas data manipulations and Altair charts: https://github.com/rileyschenck/ca_finance
+
 Sources:
 California State Expenditures and Revenues
   Legislative Analyst's Office: https://lao.ca.gov/policyareas/state-budget/historical-data
