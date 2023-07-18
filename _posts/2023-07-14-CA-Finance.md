@@ -9,11 +9,11 @@ altair-loader:
   altair-chart-2: "charts/totalexpenditures.json"
   altair-chart-3: "charts/layeredexpenditures.json"
   altair-chart-4: "charts/revenueschart.json"
-  altair-chart-4: "charts/general_fund_chart.json"
-  altair-chart-5: "charts/Revenues-Expenditures.json"
-  altair-chart-6: "charts/Revenues-Expenditures-GDP.json"
+  altair-chart-5: "charts/general_fund_chart.json"
+  altair-chart-6: "charts/Revenues-Expenditures.json"
   altair-chart-7: "charts/GDP-stacked.json"
-  altair-chart-8: "charts/GDP-line.json"
+  altair-chart-8: "charts/Revenues-Expenditures-GDP.json"
+  altair-chart-9: "charts/GDP-line.json"
 
 
 toc: true
@@ -36,7 +36,7 @@ toc_sticky: true
 
 <div id="altair-chart-8"></div>
 
-<div id="altair-chart-8"></div>
+<div id="altair-chart-9"></div>
 
 Github Repository with the Jupyter Notebook that has the code for the Pandas data manipulations and Altair charts: https://github.com/rileyschenck/ca_finance
 
