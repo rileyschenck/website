@@ -1,14 +1,15 @@
 ---
-title: "California State Finances and GDP Visualizations with Altair"
+title: "California government's spending bonanza is shockingly modest when compared with GDP growth"
 date: 2023-07-14
 published: true
-tags: [ California, Finance]
-excerpt: ""
+tags: [ California, fiance, GDP, altair, charts]
+excerpt: "Analyzing California's finances and GDP with altair charts"
 altair-loader:
   altair-chart-1: "charts/agencychart.json"
   altair-chart-2: "charts/totalexpenditures.json"
   altair-chart-3: "charts/layeredexpenditures.json"
   altair-chart-4: "charts/revenueschart.json"
+  altair-chart-4: "charts/general_fund_chart.json"
   altair-chart-5: "charts/Revenues-Expenditures.json"
   altair-chart-6: "charts/Revenues-Expenditures-GDP.json"
   altair-chart-7: "charts/GDP-stacked.json"
@@ -32,6 +33,8 @@ toc_sticky: true
 <div id="altair-chart-6"></div>
 
 <div id="altair-chart-7"></div>
+
+<div id="altair-chart-8"></div>
 
 <div id="altair-chart-8"></div>
 
