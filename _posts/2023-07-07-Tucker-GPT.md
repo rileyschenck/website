@@ -1,5 +1,5 @@
 ---
-title: "Building a cheap Tucker Carlson bot using LangChain, Pinecone, Chat-GPT, and 813 Carlson transcripts"
+title: "Building a Tucker Carlson bot using LangChain, Pinecone, Chat-GPT, and 813 Carlson transcripts"
 date: 2023-07-07
 published: true
 tags: [dataviz]
@@ -27,6 +27,8 @@ Steps:
 7. Tweak your prompts for Chat-GPT (prompt engineering)
 
 ### 1. Web scraping 831 Tucker Carlson monologues from Fox News' website
+Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was cancelled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript
+
 Comments explain how I scraped the monologues from Fox's website:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape1.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape2.png)
@@ -66,13 +68,18 @@ Then, we define a little function that uses Pinecone's similarity search method 
 
 ### 6. Query the transcripts using Chat-GPT
 
-And with that we are all set to query our chunks of Tucker Carlson transcripts and make our cheap Tucker bot! 
+And with that we are all set to query our chunks of Tucker Carlson transcripts, adjusting our prompts to get Chat-GPT to take the pieces of provided context and immitate their style and substance to make a Tucker Carlson bot.
 
- ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/query2.png)
+A couple things of note: 
 
-[Link text](https://www.example.com)
+Sometimes the pieces of context provided to Chat GPT are clearly moments when Carlson is being sarcastic, which he oftentimes is, especially when creating bombastic straw men of what liberals supposedly say and think which explains some unexpected outputs, for example when asked to immitate the tone and language of the angriest pieces of context when talking about white men or Russia.
+
+Also, as a chatbot, Chat-GPT saves context from your previous queries which may influence its response to your current query unless you create a new instance of the QAChain every time you want to ask a question without effectively simulating a 'fresh start' for each query by starting the chat over. To achieve this you can place the chain object inside the get_answer() function below by uncommenting the line that begins with "chain." 
+
+ ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/queryupdate.png)
+
  
-### 7. Tweak your prompts for Chat-GPT (prompt engineering) to create an Angry Tucker Carlson bot
+### 7. Tweak your prompts for Chat-GPT (prompt engineering) to create an angry Tucker Carlson bot
 
 By tweaking our prompt that we input as our query, we can effectively "train" a bot that imitates the most inflamatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relavant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
 
@@ -87,14 +94,14 @@ While that does sound a bit like Carlson, I wanted to see if it could replicate 
 
 You may be tempted to think that this is too much, Chat-GPT must be putting words in Carlson's mouth, surely he didn't actually say that Democrats are "the party of neurotic, personally unsatisfied White ladies," well think again because that is a direct quote from a piece of context found in [this December 21, 2021 monologue:](https://www.foxnews.com/opinion/tucker-carlson-biden-covid-policies)
 
->They're the party of neurotic, personally unsatisfied White ladies who live in the suburbs. You know, the pretty little signs you see in the lawns of affluent neighborhoods >telling you how the people who live inside love BLM and support Tony Fauci? That's the real Democratic Party.
+>They're the party of neurotic, personally unsatisfied White ladies who live in the suburbs. You know, the pretty little signs you see in the lawns of affluent neighborhoods telling you how the people who live inside love BLM and support Tony Fauci? That's the real Democratic Party.
 
+More examples of angry Tucker Carlson:
 
-
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a2.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a3.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/desantis.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a4.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a5.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/zelensky.png)
 
 #### In the world of Carlson, everything is a conspiracy and nobody is to be trusted! Except the conspiracy theorists, of course...
 
@@ -104,9 +111,11 @@ You may be tempted to think that this is too much, Chat-GPT must be putting word
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct3.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct4.png)
 
-#### The output using the angriest pieces of context about "White men" shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame while talking about issues surrounding race.
+#### The output using the angriest pieces of context about "White men" shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame. Similar messaging is used when talking about Putin and Russia, employing sarcastic straw men to paint liberals as obessed and blinded by their hatred of Russia.  
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t7.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/russia.png)
+
 
 
 
