@@ -27,7 +27,7 @@ Steps:
 6. Query the transcripts using Chat-GPT, providing the 20 most relevant chunks of text from the transcripts as context.
 7. Tweak your prompts for Chat-GPT (prompt engineering)
 
-### 1. Web scraping 831 Tucker Carlson monologues from Fox News' website
+### 1. Web scraping 831 Carlson monologues
 Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was cancelled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: [https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript](https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript)
 
 Comments explain how I scraped the monologues from Fox's website:
@@ -42,21 +42,21 @@ The resulting dataframe containing each Carlson monologue's URL, the date it was
 If we want to be able to allow Chat-GPT to query all the transcripts simultaneously we will need to combine them into a single, long document.
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/combine.png)
 
-### 3. Use Langchain's recursive character splitter to break the document into chunks 
+### 3. Split doc into chunks with Langchain's recursive character splitter
 The splitter simply slices the entire document we've created of all the transcripts into 1,000 character chunks of text (about 150 words per chunk). We can make the chunks as large or small as we like, but we want to make sure the chunks are large enough to provide relevant context, while at the same time not being so large that we lose precision. For example, if we ask Chat-GPT what Carlson's monologues say about California, we want the similarity search to pull in the most relevant examples of Carlson ranting about California and provide them as context to Chat-GPT. If the chunks are too small we may miss lots of relevant context, because Carlson may only mention California when he first starts speaking about it, and if the chunk ends before he finishes we will lose any additional context that's not included in that chunk.
 
 On the other hand, if the chunks are too large we may include irrelevant parts of text where Carlson isn't talking about California, and since we only get about 3,000 words of context to provide Chat-GPT, we definitely don't want to waste valuable context space on text that is irrelevant to our query. As you will see below, when the chunks are set to 1,000 characters, we get a maximum of 20 pieces of context to provide Chat-GPT, or in the context of our task, just 20 examples of Carlson talking about California, Democrats, Trump, or whatever we want our Carlson bot to talk about. 
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/recursive.png)
 
-### 4. Use OpenAIEmbeddings to turn each chunk of text into a vector.
+### 4. Turn text chunks into vectors with OpenAIEmbeddings
 If you don't know what word embeddings are, basically it's code for language, where words and their relationships to each other are all mapped as numbers, so when you "embed" text as a vector, you are converting that text into a bunch of numbers that correspond to its semantic meaning.
 
 With OpenAI's embeddings, our text is going to be represented by 1,536 numbers, regardless of whether it's two words long like the example below of "Hello world," or our 150 word chunks of text. As you can see in the code below, the length of the vector/embedding we created from "Hello world" is indeed 1,536 numbers long, and I've printed out the first 5 of those numbers as well.
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/embeddings.png)
 
-### 5. Store the vectors on Pinecone as an index and allow for similarity search between them.
+### 5. Using Pinecone as a vector store that allows for similarity search
 We are going to have a whooooole bunch of vectors (one 1,536 number long vector like the one above for each 150 word chunk of text) and we will need to store them somewhere, and Pinecone is great for that. There are many tutorials online on how to set up an account and get started with your first Pinecone project (it's literally just a few clicks).
 
 To create our index of vectors in Pinecone, we use the Pinecone.from_documents method, pass in our docs (the 150 word transcript chunks), our embedding object we created that will turn those chunks into numerical vectors, and the name of our index we've set up in Pinecone.
@@ -80,9 +80,9 @@ Also, as a chatbot, Chat-GPT saves context from your previous queries which may 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/queryupdate.png)
 
  
-### 7. Tweak your prompts for Chat-GPT (prompt engineering) to create an angry Tucker Carlson bot
+### 7. Tweak your prompts to create an angry Tucker Carlson bot
 
-By tweaking our prompt that we input as our query, we can effectively "train" a bot that imitates the most inflamatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relavant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
+By tweaking our prompt that we input as our query we can create a bot that imitates the most inflamatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relavant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
 
 #### (TRIGGER WARNING)
 Before you procede any further or try this on your own, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are desparaging to women and minorities, just like Tucker Carlson is.
