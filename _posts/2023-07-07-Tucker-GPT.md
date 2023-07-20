@@ -70,19 +70,26 @@ And with that we are all set to query our chunks of Tucker Carlson transcripts a
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/query2.png)
 
+[Link text](https://www.example.com)
  
 ### 7. Tweak your prompts for Chat-GPT (prompt engineering) to create an Angry Tucker Carlson bot
 
 By tweaking our prompt that we input as our query, we can effectively "train" a bot that imitates the most inflamatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relavant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
 
-Before you procede any further, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are desparaging to women and minorities (and I haven't included the angry Tucker Carlson output for 'trans rights' which is downright vile).
+#### (TRIGGER WARNING)
+Before you procede any further or try this on your own, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are desparaging to women and minorities, just like Tucker Carlson is.
 
-#### (TRIGGER WARNING) Summarizing some of the monologues' most controversial views with different prompts
-
+I first tried to get Chat-GPT to adopt the voice of Carlson by asking it to immitate the style and substance of the pieces of context about a particular topic, in this case Democrats:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems1.png)
 
-#### (TRIGGER WARNING) Angry Tucker Bot
-Using the angriest pieces of context from Tucker Carlson's monologues to create an Angry Tucker Bot that imitates the anger and vitriol often used in his messaging. 
+While that does sound a bit like Carlson, I wanted to see if it could replicate Cthe anger and vitriol often used in his messaging by asking it to immitate the style and substance of the "angriest" pieces of context: 
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems2.png)
+
+You may be tempted to think that this is too much, Chat-GPT must be putting words in Carlson's mouth, surely he didn't actually say that Democrats are "the party of neurotic, personally unsatisfied White ladies," well think again because that is a direct quote from a piece of context found in [this December 21, 2021 monologue:](https://www.foxnews.com/opinion/tucker-carlson-biden-covid-policies)
+
+>They're the party of neurotic, personally unsatisfied White ladies who live in the suburbs. You know, the pretty little signs you see in the lawns of affluent neighborhoods >telling you how the people who live inside love BLM and support Tony Fauci? That's the real Democratic Party.
+
+
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a2.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a3.png)
