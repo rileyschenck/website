@@ -10,9 +10,10 @@ read_time: false
 ---
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/scaredtucker.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/replacement.png)
+
 Are you someone who misses their nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting about his infamous "replacement theory" was actually not an excerpt at all, but Chat-GPT imitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic-sounding Tucker Carlson bot who will rant and rave for as long as your heart desires about any and all of the hot-button topics of the day, just like the good 'ol times! 
 
-I will take you step by step through the process of how you can query and ask questions of Carlson's transcripts, or any document for that matter. You can follow along and run all the code yourself using the Jupyter Notebook version of this post [here](https://github.com/rileyschenck/tuckercarlson/blob/main/tucker_generator.ipynb)
+I will take you step by step through the process of how you can query and ask questions of Carlson's transcripts, or any document for that matter. You can follow along and run all the code yourself using [the Jupyter Notebook version of this post.](https://github.com/rileyschenck/tuckercarlson/blob/main/tucker_generator.ipynb)
 
 ### First, a quick overview:
 Using LangChain, Pinecone, and Chat-GPT to query any documents you have is actually remarkably easy. The web scraping I did to just get the transcripts was the most complicated bit of coding in this process BY FAR. The monologue transcripts from Tucker Carlson Tonight were scraped from Fox News' website and cover a period from November 27, 2018 to March 16, 2023. I show the code below for how I scraped the transcripts using Selenium and Beautiful Soup. Feel free to skip over that section if you want to get straight to the nitty gritty of using LangChain and Pinecone to query the transcripts with Chat-GPT. 
