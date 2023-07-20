@@ -79,8 +79,6 @@ Before you procede any further, I have to warn you that some of the outputs prod
 
 #### (TRIGGER WARNING) Summarizing some of the monologues' most controversial views with different prompts
 
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt4.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt5.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt6.png)
 
 #### (TRIGGER WARNING) Angry Tucker Bot
