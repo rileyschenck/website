@@ -79,7 +79,7 @@ Before you procede any further, I have to warn you that some of the outputs prod
 
 #### (TRIGGER WARNING) Summarizing some of the monologues' most controversial views with different prompts
 
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/tt6.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems1.png)
 
 #### (TRIGGER WARNING) Angry Tucker Bot
 Using the angriest pieces of context from Tucker Carlson's monologues to create an Angry Tucker Bot that imitates the anger and vitriol often used in his messaging. 
