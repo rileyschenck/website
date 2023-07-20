@@ -28,7 +28,7 @@ Steps:
 7. Tweak your prompts for Chat-GPT (prompt engineering)
 
 ### 1. Web scraping 831 Tucker Carlson monologues from Fox News' website
-Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was cancelled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript
+Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was cancelled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: [https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript](https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript)
 
 Comments explain how I scraped the monologues from Fox's website:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape1.png)
@@ -90,7 +90,7 @@ Before you procede any further or try this on your own, I have to warn you that 
 I first tried to get Chat-GPT to adopt the voice of Carlson by asking it to immitate the style and substance of the pieces of context about a particular topic, in this case Democrats:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems1.png)
 
-While that does sound a bit like Carlson, I wanted to see if it could replicate Cthe anger and vitriol often used in his messaging by asking it to immitate the style and substance of the "angriest" pieces of context: 
+While that does sound a bit like Carlson, I wanted to see if it could identify the vitriol often used in his messaging by asking it to immitate the style and substance of the "angriest" pieces of context: 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems2.png)
 
 You may be tempted to think that this is too much, Chat-GPT must be putting words in Carlson's mouth, surely he didn't actually say that Democrats are "the party of neurotic, personally unsatisfied White ladies," well think again because that is a direct quote from a piece of context found in [this December 21, 2021 monologue:](https://www.foxnews.com/opinion/tucker-carlson-biden-covid-policies)
