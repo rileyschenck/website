@@ -31,15 +31,18 @@ Steps:
 Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was cancelled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: [https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript](https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript)
 
 Comments explain how I scraped the monologues from Fox's website:
+
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape1.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape2.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape3.png)
 
 The resulting dataframe containing each Carlson monologue's URL, the date it was published (timestamp), it's title, and the text of the transcript:
+
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dataframe.png)
 
 ### 2. Combine texts into a single document 
 If we want to be able to allow Chat-GPT to query all the transcripts simultaneously we will need to combine them into a single, long document.
+
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/combine.png)
 
 ### 3. Split doc into chunks with Langchain's recursive character splitter
@@ -79,7 +82,6 @@ Also, as a chatbot, Chat-GPT saves context from your previous queries which may 
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/queryupdate.png)
 
- 
 ### 7. Tweak your prompts to create an angry Tucker Carlson bot
 
 By tweaking our prompt that we input as our query we can create a bot that imitates the most inflamatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relavant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
@@ -88,9 +90,11 @@ By tweaking our prompt that we input as our query we can create a bot that imita
 Before you procede any further or try this on your own, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are desparaging to women and minorities, just like Tucker Carlson is.
 
 I first tried to get Chat-GPT to adopt the voice of Carlson by asking it to immitate the style and substance of the pieces of context about a particular topic, in this case Democrats:
+
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems1.png)
 
 While that does sound a bit like Carlson, I wanted to see if it could identify the vitriol often used in his messaging by asking it to immitate the style and substance of the "angriest" pieces of context: 
+
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems2.png)
 
 You may be tempted to think that this is too much, Chat-GPT must be putting words in Carlson's mouth, surely he didn't actually say that Democrats are "the party of neurotic, personally unsatisfied White ladies," well think again because that is a direct quote from a piece of context found in [this December 21, 2021 monologue:](https://www.foxnews.com/opinion/tucker-carlson-biden-covid-policies)
@@ -104,7 +108,7 @@ More examples of angry Tucker Carlson:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/a5.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/zelensky.png)
 
-#### In the world of Carlson, everything is a conspiracy and nobody is to be trusted! Except the conspiracy theorists, of course...
+In the world of Carlson, everything is a conspiracy and nobody is to be trusted! Except the conspiracy theorists, of course...
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/jan6.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct1.png)
@@ -112,7 +116,7 @@ More examples of angry Tucker Carlson:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct3.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct4.png)
 
-#### The output using the angriest pieces of context about "White men" shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame. Similar messaging is used when talking about Putin and Russia, employing sarcastic straw men to paint liberals as obessed and blinded by their hatred of Russia.  
+The output using the angriest pieces of context about "White men" shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame. Similar messaging is used when talking about Putin and Russia, employing sarcastic straw men to paint liberals as obessed and blinded by their hatred of Russia.  
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t7.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/russia.png)
