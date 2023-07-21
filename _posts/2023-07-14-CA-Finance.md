@@ -8,11 +8,11 @@ altair-loader:
   altair-chart-1: "charts/agencychart.json"
   altair-chart-2: "charts/totalexpenditures.json"
   altair-chart-3: "charts/layeredexpenditures.json"
-  altair-chart-4: "charts/total_revenues.json"
-  altair-chart-5: "charts/revenue_types.json"
-  altair-chart-6: "charts/gen_fund_rev.json"
-  altair-chart-7: "charts/REGDP_combined.json"
-  altair-chart-8: "charts/GDP-stacked.json"
+  altair-chart-4: "charts/total_revenues (1).json"
+  altair-chart-5: "charts/revenue_types (1).json"
+  altair-chart-6: "charts/gen_fund_rev (1).json"
+  altair-chart-7: "charts/REGDP_combined (1).json"
+  altair-chart-8: "charts/GDP-stacked (1).json"
   altair-chart-9: "charts/GDP-line.json"
 
 
