@@ -40,14 +40,18 @@ toc_sticky: true
 
 Github Repository with the Jupyter Notebook that has the code for the Pandas data manipulations and Altair charts: [https://github.com/rileyschenck/ca_finance](https://github.com/rileyschenck/ca_finance)
 
-Sources:
+Sources
 
-California State Expenditures and Revenues:
+California State Expenditures and Revenues
+
 [Legislative Analyst's Office](https://lao.ca.gov/policyareas/state-budget/historical-data)
+
 [California Department of Finance's Enacted Budgets](https://ebudget.ca.gov/)
 
-2012 Chained vs 2022 Dollar GDP figures for CA: 
+2012 Chained vs 2022 Dollar GDP figures for CA 
+
 [U.S. Bureau of Economic Analysis: Gross Domestic Product by State](https://www.bea.gov/data/gdp/gdp-state)
 
-Industry-specific GDP Data:
+Industry-specific GDP Data
+
 [United States Regional Economic Analysis Project](https://united-states.reaproject.org/data-tables/gsp-a900n/tools/60000/)
