@@ -1,5 +1,5 @@
 ---
-title: "Building a Tucker Carlson bot using LangChain, Pinecone, Chat-GPT, and 813 Carlson transcripts"
+title: "Building an angry Tucker Carlson bot using LangChain, Pinecone, Chat-GPT, and 813 Carlson transcripts"
 date: 2023-07-07
 published: true
 tags: [dataviz]
@@ -11,7 +11,9 @@ read_time: false
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/scaredtucker.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/replacement.png)
 
-Are you someone who misses their nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting about his infamous "replacement theory" was actually not an excerpt at all, but Chat-GPT imitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic Tucker Carlson bot that will rant and rave about all of the hot-button topics of the day, just like the good 'ol times! Joking aside, the bot vividly highlights just how extreme Carlson's rhetoric is by effectively condensing what are normally moments of extreme rhetoric about any topic sprinkled throughout his moonologues into a short paragraph. It also demonstrates how we are entering into a new world of automated chatbots that bad actors will be able to cheaply create and unleash onto the world's social media sites, forums, and comment sections (as if things weren't toxic enough already).
+Do you miss your nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting about his infamous "replacement theory" was actually not an excerpt at all, but Chat-GPT imitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic Tucker Carlson bot that will rant and rave about all of the hot-button topics of the day, just like the good 'ol times! 
+
+Joking aside, the angry Tucker Carlson bot created below vividly highlights just how extreme Carlson's rhetoric can be by taking moments of extreme rhetoric about any topic sprinkled throughout his moonologues and condensing them into a short paragraph. It also demonstrates how we are entering into a dangerous new world of advanced bots adept at imitating and magnifying extremist views that bad actors will be able to cheaply create and unleash onto the world's social media sites, forums, and comment sections (as if things weren't toxic enough already).
 
 I will take you step by step through the process of how you can query and ask questions of Carlson's transcripts, or any document for that matter. You can follow along and run all the code yourself using [the Jupyter Notebook version of this post.](https://github.com/rileyschenck/tuckercarlson/blob/main/tucker_generator.ipynb)
 
