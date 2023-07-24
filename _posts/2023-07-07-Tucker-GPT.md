@@ -74,11 +74,7 @@ Then, we define a little function that uses Pinecone's similarity search method 
 
 And with that we are all set to query our chunks of Tucker Carlson transcripts, adjusting our prompts to get Chat-GPT to take the pieces of provided context and immitate their style and substance to make a Tucker Carlson bot.
 
-A couple things of note: 
-
-Sometimes the pieces of context provided to Chat GPT are clearly moments when Carlson is being sarcastic, which he oftentimes is, especially when creating bombastic straw men of what liberals supposedly say and think which explains some unexpected outputs, for example when asked to immitate the tone and language of the angriest pieces of context when talking about white men or Russia.
-
-Also, as a chatbot, Chat-GPT saves context from your previous queries which may influence its response to your current query unless you create a new instance of the QAChain every time you want to ask a question without effectively simulating a 'fresh start' for each query by starting the chat over. To achieve this you can place the chain object inside the get_answer() function below by uncommenting the line that begins with "chain." 
+As a chatbot Chat-GPT saves your previous queries and uses them as additional context for its response to your current query. If you want to "start fresh" with only your current query and the corresponding context pulled from Pinecone's vector store of your document, you have to create a new instance of the QAChain by placing the chain object inside the get_answer() function. You can achieve this by uncommenting the line that begins with "chain":
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/queryupdate.png)
 
@@ -100,6 +96,8 @@ While that does sound a bit like Carlson, I wanted to see if it could identify t
 You may be tempted to think that this is too much, Chat-GPT must be putting words in Carlson's mouth, surely he didn't actually say that Democrats are "the party of neurotic, personally unsatisfied White ladies," well think again because that is a direct quote from a piece of context found in [this December 21, 2021 monologue:](https://www.foxnews.com/opinion/tucker-carlson-biden-covid-policies)
 
 >They're the party of neurotic, personally unsatisfied White ladies who live in the suburbs. You know, the pretty little signs you see in the lawns of affluent neighborhoods telling you how the people who live inside love BLM and support Tony Fauci? That's the real Democratic Party.
+
+I found that when asking Chat GPT to immitate the tone and language of the angriest pices of context, the output can sometimes be extremely critical towards certain subjects that Carlson rarely criticizes, such as white men, Russia, and January 6 rioters. Carlson commonly uses sarcasm and hyperbole when creating straw men of what he tells his viewers that liberals say and think, so it's not surprising that the angriest pieces of context about white men in the transcripts are examples of Carlson pretending to be a fictional, radical liberal ranting about how white men are an existential threat to society, and the degree of venom and anger in the output (see final screenshots below) shows just how vitriolic his messaging is on issues of race as he nurtures deep-seated racial anxieties among his viewers. 
 
 More examples of angry Tucker Carlson:
 
