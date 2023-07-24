@@ -1,6 +1,6 @@
 ---
 title: "Market Research Data Analysis and Zoom PowerPoint Presentation"
-date: 2023-03-02
+date: 2023-03-06
 published: true
 tags: [ powerpoint, riley, schenck]
 excerpt: "From a 'Communicating Data Results' class: Is Lubbock or Sacramento a better location for a new fast food restaurant?" 
