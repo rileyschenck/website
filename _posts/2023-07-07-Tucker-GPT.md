@@ -15,13 +15,13 @@ Do you miss your nightly dose of hyperbolic and conspiratorial raving from Tucke
 
 Joking aside, the angry Tucker Carlson bot created below vividly highlights just how extreme Carlson's rhetoric can be by taking moments of extreme rhetoric about any topic sprinkled throughout his moonologues and condensing them into a short paragraph. It also demonstrates how we are entering into a dangerous new world of advanced bots adept at imitating and magnifying extremist views that bad actors will be able to cheaply create and unleash onto the world's social media sites, forums, and comment sections (as if things weren't toxic enough already).
 
-I will take you step by step through the process of how you can query and ask questions of Carlson's transcripts, or any document for that matter. You can follow along and run all the code yourself using [the Jupyter Notebook version of this post.](https://github.com/rileyschenck/tuckercarlson/blob/main/tucker_generator.ipynb)
+I will take you step by step through the process of how I built the angry Tucker bot. You can follow along and run all the code yourself using [the Jupyter Notebook version of this post.](https://github.com/rileyschenck/tuckercarlson/blob/main/tucker_generator.ipynb)
 
 ### First, a quick overview:
-Using LangChain, Pinecone, and Chat-GPT to query any documents you have is actually remarkably easy. The web scraping I did to just get the transcripts was the most complicated bit of coding in this process BY FAR. The monologue transcripts from Tucker Carlson Tonight were scraped from Fox News' website and cover a period from November 27, 2018 to March 16, 2023. I show the code below for how I scraped the transcripts using Selenium and Beautiful Soup. Feel free to skip over that section if you want to get straight to the nitty gritty of using LangChain and Pinecone to query the transcripts with Chat-GPT. 
+Using LangChain, Pinecone, and Chat-GPT to query any document or set of documents is actually remarkably easy. The web scraping I did to just get the transcripts of Carlson's monologues was the most complicated bit of coding in this process BY FAR. The transcripts were scraped from Fox News' website and cover a period from November 27, 2018 to March 16, 2023. I show the code below for how I scraped the transcripts using Selenium and Beautiful Soup. Feel free to skip over that section if you want to get straight to the nitty gritty of how to use LangChain and Pinecone to query the transcripts (or your own document) with Chat-GPT. 
 
 Steps:
-1. Scrape the transcripts (skip if you like).
+1. Scrape the transcripts.
 2. Create a single large document that contains all of the Carlson monologue transcripts that I scraped from the web.
 3. Use Langchain's recursive character splitter to break the document into chunks.
 4. Use OpenAIEmbeddings to turn each chunk of text into a vector.
@@ -29,10 +29,10 @@ Steps:
 6. Query the transcripts using Chat-GPT, providing the 20 most relevant chunks of text from the transcripts as context.
 7. Tweak your prompts for Chat-GPT (prompt engineering)
 
-### 1. Web scraping 831 Carlson monologues
+### 1. Scrape the transcripts from the web
 Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was cancelled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: [https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript](https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript)
 
-Comments explain how I scraped the monologues from Fox's website:
+ The transcripts contain the context that will ultimately be fed to Chat-GPT. Comments explain how I scraped the monologues from Fox's website:
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape1.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape2.png)
