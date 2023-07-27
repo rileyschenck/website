@@ -28,7 +28,7 @@ Steps:
 7. Tweak your prompts for Chat-GPT (prompt engineering)
 
 ### 1. Scrape the transcripts from the web
-Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was canceled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: [https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript](https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript)
+Edit: This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: [https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript](https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript)
 
  The transcripts contain the context that will ultimately be fed to Chat-GPT. Comments explain how I scraped the monologues from Fox's website:
 
