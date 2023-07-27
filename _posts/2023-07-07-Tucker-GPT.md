@@ -11,9 +11,7 @@ read_time: false
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/scaredtucker.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/replacement.png)
 
-Do you miss your nightly dose of hyperbolic and conspiratorial raving from Tucker Carlson on Fox News? Well, what if I were to tell you that the excerpt above of Tucker ranting about his infamous "replacement theory" was actually not an excerpt at all, but Chat-GPT imitating Mr. Carlson based on his own monologues? That's right, with a little modern magic we can actually create a realistic Tucker Carlson bot that will rant and rave about all of the hot-button topics of the day, just like the good 'ol times! 
-
-Joking aside, the angry Tucker Carlson bot created below vividly highlights just how extreme Carlson's rhetoric can be by taking moments of extreme rhetoric about any topic sprinkled throughout his moonologues and condensing them into a short paragraph. It also demonstrates how we are entering into a dangerous new world of advanced bots adept at imitating and magnifying extremist views that bad actors will be able to cheaply create and unleash onto the world's social media sites, forums, and comment sections (as if things weren't toxic enough already).
+The excerpt above of Tucker Carlson ranting about his infamous "replacement theory" is actually not an excerpt at all, but Chat-GPT imitating Carlson based on his own monologues. The "angry Tucker Carlson bot" created below is made just by providing context to Chat-GPT from Carlson's monologues about a particular topic and asking Chat-GPT to imitate the angriest examples. It vividly highlights just how extreme Carlson's rhetoric can be by condensing the "angriest" examples of rhetoric sprinkled throughout his monologues and condensing them into a short paragraph. It also demonstrates how large language models (LLMs) will usher us into a dangerous new world of advanced bots adept at imitating and magnifying extremist views that bad actors can cheaply create and unleash onto the world's social media sites, forums, and comment sections (as if things weren't toxic enough already).
 
 I will take you step by step through the process of how I built the angry Tucker bot. You can follow along and run all the code yourself using [the Jupyter Notebook version of this post.](https://github.com/rileyschenck/tuckercarlson/blob/main/tucker_generator.ipynb)
 
@@ -30,7 +28,7 @@ Steps:
 7. Tweak your prompts for Chat-GPT (prompt engineering)
 
 ### 1. Scrape the transcripts from the web
-Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was cancelled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: [https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript](https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript)
+Edit: I originally scraped these transcripts for a class project on March 16, 2023 before Carlson's Fox News show was canceled. This code no longer works since Fox News has removed the following page that included links to all of Carlson's available monologues and transcripts: [https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript](https://www.foxnews.com/category/shows/tucker-carlson-tonight/transcript)
 
  The transcripts contain the context that will ultimately be fed to Chat-GPT. Comments explain how I scraped the monologues from Fox's website:
 
@@ -38,7 +36,7 @@ Edit: I originally scraped these transcripts for a class project on March 16, 20
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape2.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/webscrape3.png)
 
-The resulting dataframe containing each Carlson monologue's URL, the date it was published (timestamp), it's title, and the text of the transcript:
+The resulting data frame containing each Carlson monologue's URL, the date it was published (timestamp), it's title, and the text of the transcript:
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dataframe.png)
 
@@ -82,16 +80,16 @@ As a chatbot Chat-GPT saves your previous queries and uses them as additional co
 
 ### 7. Tweak your prompts to create an angry Tucker Carlson bot
 
-By tweaking our prompt that we input as our query we can create a bot that imitates the most inflamatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relavant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
+By tweaking our prompt that we input as our query we can create a bot that imitate the most inflammatory messaging seen in Tucker Carlson's monologues for any topic that is discussed in the transcripts. Instead of having to hire an army of online trolls or train their own advanced large language models, bad actors that are trying to flood social media with biased posts hoping to inflame divisions or influence voter behavior will only have to provide relevant context to one of the multitude of freely available and ever-improving free open source models to instruct it how it should respond to any topic of conversation. I of course am not encouraging people to do this, but rather highlighting what I believe is a dangerous new front in the battle against malicious influence campaigns on social media.
 
 #### (TRIGGER WARNING)
-Before you procede any further or try this on your own, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are desparaging to women and minorities, just like Tucker Carlson is.
+Before you proceed any further or try this on your own, I have to warn you that some of the outputs produced using context from Tucker Carlson's monologues are disparaging to women and minorities, just like Tucker Carlson is.
 
 I first tried to get Chat-GPT to adopt the voice of Carlson by asking it to immitate the style and substance of the pieces of context about a particular topic, in this case Democrats:
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems1.png)
 
-While that does sound a bit like Carlson, I wanted to see if it could identify the vitriol often used in his messaging by asking it to immitate the style and substance of the "angriest" pieces of context: 
+While that does sound a bit like Carlson, I wanted to see if it could identify the vitriol often used in his messaging by asking it to imitate the style and substance of the "angriest" pieces of context: 
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/dems2.png)
 
@@ -99,7 +97,7 @@ You may be tempted to think that this is too much, Chat-GPT must be putting word
 
 >They're the party of neurotic, personally unsatisfied White ladies who live in the suburbs. You know, the pretty little signs you see in the lawns of affluent neighborhoods telling you how the people who live inside love BLM and support Tony Fauci? That's the real Democratic Party.
 
-I found that when asking Chat GPT to immitate the tone and language of the angriest pices of context, the output can sometimes be extremely critical towards certain subjects that Carlson rarely criticizes, such as white men, Russia, and January 6 rioters. Carlson commonly uses sarcasm and hyperbole when creating straw men of what he tells his viewers that liberals say and think, so it's not surprising that the angriest pieces of context about white men in the transcripts are examples of Carlson pretending to be a fictional, radical liberal ranting about how white men are an existential threat to society, and the degree of venom and anger in the output (see final screenshots below) shows just how vitriolic his messaging is on issues of race as he nurtures deep-seated racial anxieties among his viewers. 
+I found that when asking Chat GPT to imitate the tone and language of the angriest pieces of context, the output can sometimes be extremely critical towards certain subjects that Carlson rarely criticizes, such as white men, Russia, and January 6 rioters. Carlson commonly uses sarcasm and hyperbole when creating straw men of what he tells his viewers that liberals say and think, so it's not surprising that the angriest pieces of context about white men in the transcripts are examples of Carlson pretending to be a fictional, radical liberal ranting about how white men are an existential threat to society, and the degree of venom and anger in the output (see final screenshots below) shows just how vitriolic his messaging is on issues of race as he nurtures deep-seated racial anxieties among his viewers. 
 
 More examples of angry Tucker Carlson:
 
@@ -116,7 +114,7 @@ In the world of Carlson, everything is a conspiracy and nobody is to be trusted!
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct3.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct4.png)
 
-The output using the angriest pieces of context about "White men" shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame. Similar messaging is used when talking about Putin and Russia, employing sarcastic straw men to paint liberals as obessed and blinded by their hatred of Russia.  
+The output using the angriest pieces of context about "White men" shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame. Similar messaging is used when talking about Putin and Russia, employing sarcastic straw men to paint liberals as obsessed and blinded by their hatred of Russia.  
 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t7.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/russia.png)
