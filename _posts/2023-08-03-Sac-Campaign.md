@@ -1,13 +1,14 @@
 ---
-title: "Interactive Charts of Campaign Contributions to Sacramento City Council Members"
+title: "Interactive Charts of Sacramento Campaign Contributions"
 date: 2023-08-03
 published: true
 tags: [ Sacramento, campaign finance, contributions, altair, charts]
-excerpt: "Visualizing who contributed to Sacramento City Council members' campaigns with interactive Altair charts"
+excerpt: "Visualizing who contributed to Sacramento political campaigns and committees with interactive Altair charts"
 altair-loader:
-  altair-chart-1: "charts/saccouncil.json"
-  altair-chart-2: "charts/darrell.json"
-  altair-chart-3: "charts/othermembers.json"
+  altair-chart-1: "charts/totalcampaignexpenditures.json"
+  altair-chart-2: "charts/saccouncil.json"
+  altair-chart-3: "charts/darrell.json"
+  altair-chart-4: "charts/othermembers.json"
 
 
 toc: true
@@ -20,3 +21,4 @@ toc_sticky: true
 
 <div id="altair-chart-3"></div>
 
+<div id="altair-chart-4"></div>
