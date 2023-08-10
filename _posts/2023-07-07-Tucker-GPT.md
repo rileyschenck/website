@@ -8,7 +8,6 @@ toc: true
 toc_sticky: true
 read_time: false
 ---
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/scaredtucker.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/replacement.png)
 
 The excerpt above of Tucker Carlson ranting about his infamous "replacement theory" is actually not an excerpt at all, but Chat-GPT imitating Carlson based on his own monologues. The "angry Tucker Carlson bot" created below is as easy as searching the monologues for snippets of text about a particular topic and then asking Chat-GPT to imitate the angriest examples. It vividly highlights just how extreme Carlson's rhetoric can be by condensing the "angriest" examples of rhetoric about a particular topic sprinkled throughout his monologues into a short paragraph. It also demonstrates how the natural language processing abilities provided by large language models like Chat-GPT (in this case the ability to identify the "angriest" examples of context and imitate them) will usher us into a dangerous new world of bots adept at imitating and magnifying extremist views that bad actors can cheaply create and unleash onto the world's social media sites, forums, and comment sections (as if things weren't toxic enough already).
