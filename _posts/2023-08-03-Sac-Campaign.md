@@ -3,23 +3,14 @@ title: "Interactive Charts of Sacramento Campaign Contributions"
 date: 2023-08-03
 published: true
 tags: [ Sacramento, campaign finance, contributions, altair, charts]
-excerpt: "Visualizing who contributed to Sacramento political campaigns and committees with interactive Altair charts"
-altair-loader:
-  altair-chart-1: "charts/totalcampaignexpenditures.json"
-  altair-chart-2: "charts/saccouncil.json"
-  altair-chart-3: "charts/darrell.json"
-  altair-chart-4: "charts/othermembers.json"
+excerpt: "Exploring Sacramento Campaign Finance Data with Streamlit"
 
 
 toc: true
 toc_sticky: true
 ---
-https://sac-campaign-finance-bnxtfmrjdaslx5nyst3fzn.streamlit.app/ 
+Check out my [Streamlit app](https://sac-campaign-finance-bnxtfmrjdaslx5nyst3fzn.streamlit.app/) for analyzing Sacramento's campaign finance data. The app aggregates public campaign finance disclosures and allows users to sift through and analyze the data with a high degree of granularity to gain insights into who is financing our local elected officials political campaigns. 
 
-<div id="altair-chart-1"></div>
+ ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/Top 10 most corrupt based on percentage that report paying bribe.png)
 
-<div id="altair-chart-2"></div>
-
-<div id="altair-chart-3"></div>
-
-<div id="altair-chart-4"></div>
+ You may find my public Github repository [here](https://github.com/rileyschenck/sac-campaign-finance)
