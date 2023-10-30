@@ -16,7 +16,7 @@ Visualizing the full dataset while aggregating the bar chart on "Campaigns/PACs-
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/steinberg1.png)
 
-We can filter the dataset by "Steinberg for Sacramento Mayor" in the "Campaigns/PACs-all years" field on the left to investigate the contributions made to that particular campaign accross all years. Aggregating the bar chart based on "Contributor Last Name" reveals that campaign's top 50 contributors which are mostly trade unions, professional associations, and other special interest groups. However, the top congributions by aggregated last name is "Barkett" with a total of $23,000.
+We can filter the dataset by "Steinberg for Sacramento Mayor" in the "Campaigns/PACs-all years" field on the left to investigate the contributions made to that particular campaign accross all years. Aggregating the bar chart based on "Contributor Last Name" reveals that campaign's top contributors which are mostly trade unions, professional associations, and other special interest groups. However, the top congributor by aggregated last name is "Barkett" with a total of $23,000.
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/steinberg2.png)
  
