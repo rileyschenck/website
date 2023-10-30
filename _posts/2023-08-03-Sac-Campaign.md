@@ -1,9 +1,9 @@
 ---
-title: "Exploring Sacramento Campaign Finance Data with Streamlit"
+title: "Investigating Sacramento Campaign Finance Data with Streamlit"
 date: 2023-08-03
 published: true
 tags: [ Sacramento, campaign finance, contributions, altair, charts]
-excerpt: "Empowering users to filter, aggregate, and visualize data to suit their needs"
+excerpt: "Designed to empower journalist investigations with powerful filtering, aggregation, and visualization tools"
 
 
 toc: true
