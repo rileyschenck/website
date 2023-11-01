@@ -24,7 +24,7 @@ If we also filter "Contributor Last Name" by "Barkett" we can see in the resulti
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/steinberg3.png)
 
-Toggling the campaign's contributions by date instead of year reveals that interestingly, $1.4 million out of the campaign's $3.2 million total came on a single day: March 22, 2016:
+Toggling the campaign's contributions by date instead of year reveals that interestingly, $1.4 million out of the campaign's $3.2 million total came on a single day: March 22, 2016, which at face value seems odd and worth investigating further:
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/steinberg4.png)
 
@@ -32,11 +32,14 @@ When filtering for "Mayor Darrell Steinberg Committee for Sacramento's Future" w
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/steinberg5.png)
 
-Filtering the entire dataset for "Members' Voice of the State Building and Construction Trades Council of California" under "Contributor Last Name" shows that the committee has only ever contributed to Steinberg's mayoral campaign, campaigns in support of local ballot measures A and U, and to a campaign in opposition to measure G. 
+Filtering the entire dataset for "Members' Voice of the State Building and Construction Trades Council of California" under "Contributor Last Name" and aggregating the bar chart on "Campaigns/PACs-all years" shows that the committee has only ever contributed to Steinberg's mayoral campaign, campaigns in support of local ballot measures A and U, and to a campaign in opposition to measure G. 
 
+ ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/steinberg9.png)
+ 
+ The resulting filtered dataset:
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/steinberg6.png)
 
-We can see that the "Contributor Type" for contributors to "Mayor Darrell Steinberg Committee for Sacramento's Future" are most frequently other committees, 
+We can also see that the "Contributor Type" for contributors to "Mayor Darrell Steinberg Committee for Sacramento's Future" are most frequently other committees, 
 
  ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/steinberg8.png)
 
