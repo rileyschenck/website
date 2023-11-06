@@ -3,7 +3,7 @@ title: "Building an angry Tucker Carlson bot using LangChain, Pinecone, Chat-GPT
 date: 2023-07-07
 published: true
 tags: [dataviz]
-excerpt: "As simple as querying a database of Tucker Carlson's monologues from his Fox News show with Chat-GPT"
+excerpt: "Querying a database of Carlson's monologues from his Fox News show using Chat-GPT highlights his extreme rhetoric and the dangers of extremist chatbots"
 toc: true
 toc_sticky: true
 read_time: false
