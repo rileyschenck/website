@@ -15,7 +15,7 @@ The excerpt above of Tucker Carlson ranting about his infamous "replacement theo
 I will take you step by step through the process of how I built the angry Tucker bot. You can follow along and run all the code yourself using [the Jupyter Notebook version of this post.](https://github.com/rileyschenck/tuckercarlson/blob/main/tucker_generator.ipynb)
 
 ### First, a quick overview:
-Using LangChain, Pinecone, and Chat-GPT to query any document or set of documents is actually remarkably easy. The web scraping I did to just get the transcripts of Carlson's monologues was the most complicated bit of coding in this process BY FAR. The transcripts were scraped from Fox News' website for [a class project that looked at different methods of analyzing and comparing the topics covered in Carlson's and Rachel Maddow's shows](https://rileyschenck.github.io/website/DC-Tucker-Maddow/) and cover a period from November 27, 2018 to March 16, 2023. I show the code below for how I scraped the transcripts using Selenium and Beautiful Soup. Feel free to skip over that section if you want to get straight to the nitty gritty of how to use LangChain and Pinecone to query the transcripts (or your own document) with Chat-GPT. 
+Using LangChain, Pinecone, and Chat-GPT to query any document or set of documents is actually remarkably easy. The web scraping I did to just get the transcripts of Carlson's monologues was the most complicated bit of coding in this process by far. The transcripts were scraped from Fox News' website for [a class project that looked at different methods of analyzing and comparing the topics covered in Carlson's and Rachel Maddow's shows](https://rileyschenck.github.io/website/DC-Tucker-Maddow/) and cover a period from November 27, 2018 to March 16, 2023. I show the code below for how I scraped the transcripts using Selenium and Beautiful Soup. Feel free to skip over that section if you want to get straight to the nitty gritty of how to use LangChain and Pinecone to query the transcripts (or your own document) with Chat-GPT. 
 
 Steps:
 1. Scrape the transcripts.
@@ -45,7 +45,7 @@ If we want to be able to allow Chat-GPT to query all the transcripts simultaneou
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/combine.png)
 
 ### 3. Split doc into chunks with Langchain's recursive character splitter
-The splitter simply slices the entire document we've created of all the transcripts into 1,000 character chunks of text (about 150 words per chunk). We can make the chunks as large or small as we like, but we want to make sure the chunks are large enough to provide relevant context, while at the same time not being so large that we lose precision. For example, if we ask Chat-GPT what Carlson's monologues say about California, we want the similarity search to pull in the most relevant examples of Carlson ranting about California and provide them as context to Chat-GPT. If the chunks are too small we may miss lots of relevant context, because Carlson may only mention California when he first starts speaking about it, and if the chunk ends before he finishes we will lose any additional context that's not included in that chunk.
+The splitter slices the entire document we've created of all the transcripts into 1,000 character chunks of text (about 150 words per chunk). We can make the chunks as large or small as we like, but we want to make sure the chunks are large enough to provide relevant context, while at the same time not being so large that we lose precision. For example, if we ask Chat-GPT what Carlson's monologues say about California, we want the similarity search to pull in the most relevant examples of Carlson ranting about California and provide them as context to Chat-GPT. If the chunks are too small we may miss lots of relevant context, because Carlson may only mention California when he first starts speaking about it, and if the chunk ends before he finishes we will lose any additional context that's not included in that chunk.
 
 On the other hand, if the chunks are too large we may include irrelevant parts of text where Carlson isn't talking about California, and since we only get about 3,000 words of context to provide Chat-GPT, we definitely don't want to waste valuable context space on text that is irrelevant to our query. As you will see below, when the chunks are set to 1,000 characters, we get a maximum of 20 pieces of context to provide Chat-GPT, or in the context of our task, just 20 examples of Carlson talking about California, Democrats, Trump, or whatever we want our Carlson bot to talk about. 
 
@@ -96,7 +96,10 @@ You may be tempted to think that this is too much, Chat-GPT must be putting word
 
 >They're the party of neurotic, personally unsatisfied White ladies who live in the suburbs. You know, the pretty little signs you see in the lawns of affluent neighborhoods telling you how the people who live inside love BLM and support Tony Fauci? That's the real Democratic Party.
 
-I found that when asking Chat GPT to imitate the tone and language of the angriest pieces of context, the output can sometimes be extremely critical towards certain subjects that Carlson rarely criticizes, such as white men, Russia, and January 6 rioters. Carlson commonly uses sarcasm and hyperbole when creating straw men of what he tells his viewers that liberals say and think, so it's not surprising that the angriest pieces of context about white men in the transcripts are examples of Carlson pretending to be a fictional, radical liberal ranting about how white men are an existential threat to society, and the degree of venom and anger in the output (see final screenshots below) shows just how vitriolic his messaging is on issues of race as he nurtures deep-seated racial anxieties among his viewers. 
+I found that when asking Chat GPT to imitate the tone and language of the angriest pieces of context, the output can sometimes be extremely critical towards certain subjects that Carlson rarely actually criticizes, such as white men, Russia, and January 6 rioters. Carlson commonly uses sarcasm and hyperbole when creating straw men of what he tells his viewers that liberals say and think, so it's not surprising that the angriest pieces of context about white men in the transcripts are examples of Carlson pretending to be a fictional, radical liberal ranting about how white men are an existential threat to society. The degree of venom and anger in the output shows just how vitriolic his messaging is on issues of race and ethnicity as he pretends to be a fictional extremist liberal, nurturing deep-seated anxieties and racism among his viewers. Similar messaging is used when talking about Putin and Russia, employing sarcastic straw men to paint liberals as obsessed and blinded by their hatred of Putin and Russia.  
+
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t7.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/russia.png)
 
 More examples of angry Tucker Carlson:
 
@@ -113,10 +116,6 @@ In the world of Carlson, everything is a conspiracy and nobody is to be trusted!
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct3.png)
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/ct4.png)
 
-The output using the angriest pieces of context about "White men" shows how Carlson plays on feelings of anger, racism, and fear using sarcastic straw man arguments meant to inflame. Similar messaging is used when talking about Putin and Russia, employing sarcastic straw men to paint liberals as obsessed and blinded by their hatred of Russia.  
-
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/t7.png)
-![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/russia.png)
 
 
 
