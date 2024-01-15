@@ -45,9 +45,11 @@ It appears that the decision trees allow us to leverage data interactions and a 
 ## Failure Analysis
 Overall, our final XGBoost model demonstrates bias in the survey data set towards predicting for Democrats, where compared with the actual party preferences of survey responses there are 22% more predicted Democrat responses than actual Democrat responses, and 12% fewer predicted Republican responses than actual Republican responses. A potential contributing factor to the model's bias towards predicting for Democrats among the survey respondents could be that the survey respondents do not appear to be a very representative sample of either the typical voter or the 500,000 sample voter dataset that the model was trained on, skewing much older and more Republican, as can be seen in the charts below:
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/milestone8-agebias.png)
-Note: The survey respondents are broken up in the chart above between those who responded via text ("surveydata (T)" in green) and via landline phone ("surveydata (L)" in orange) 
+
+##### Note: The survey respondents are broken up in the chart above between those who responded via text ("surveydata (T)" in green) and via landline phone ("surveydata (L)" in orange) 
 ![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/milestone7-partybias.png)
-Nonte: D = Democrat, N = Non-Partisan, O = Other Party, R = Republican, and U = Unknown
+
+##### Note: D = Democrat, N = Non-Partisan, O = Other Party, R = Republican, and U = Unknown
 
 The 75% accuracy of the XGBoost model on the survey data validation set can be further analyzed by breaking the accuracy score into two: 547 survey respondents that have the 2016-22 voter data used for our target variable, and 986 survey respondents that don’t. Our model accurately predicts the former’s party preference at 83%, and the latter’s at 70%.
 
