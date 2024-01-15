@@ -1,9 +1,9 @@
 ---
-title: "Building a Machine Learning Model to Predict Party Affiliation"
+title: "Building a Machine Learning Model to Accurately Predict Survey Respondents' Party Preference at 75%"
 date: 2023-10-10
 published: true
 tags: [ machine learning, riley, schenck]
-excerpt: "Co-authored research paper with peers in my Master's of Applied Data Science" 
+excerpt: "As part of a research paper I co-authored with peers in my Master's of Applied Data Science" 
 
 toc: true
 toc_sticky: true
@@ -43,7 +43,9 @@ In contrast to the tree-based and logistic regression models, the target data le
 It appears that the decision trees allow us to leverage data interactions and a manageable amount of target data leakage from our target variable to capture underlying patterns that can then generalize well on unseen data, such as the validation survey data set.
 
 ## Failure Analysis
-Overall, our final XGBoost model demonstrates bias in the survey data set towards predicting for Democrats, where compared with the actual party preferences of survey responses there are 22% more predicted Democrat responses than actual Democrat responses, and 12% fewer predicted Republican responses than actual Republican responses.  
+Overall, our final XGBoost model demonstrates bias in the survey data set towards predicting for Democrats, where compared with the actual party preferences of survey responses there are 22% more predicted Democrat responses than actual Democrat responses, and 12% fewer predicted Republican responses than actual Republican responses. A potential contributing factor to the model's bias towards predicting for Democrats among the survey respondents could be that the survey respondents do not appear to be a very representative sample of either the typical voter or the 500,000 sample voter dataset that the model was trained on, skewing much older and more Republican, as can be seen in the charts below:
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/milestone8-agebias.png)
+![Plot1]({{ site.url }}{{ site.baseurl }}/assets/images/milestone7-partybias.png)
 
 The 75% accuracy of the XGBoost model on the survey data validation set can be further analyzed by breaking the accuracy score into two: 547 survey respondents that have the 2016-22 voter data used for our target variable, and 986 survey respondents that don’t. Our model accurately predicts the former’s party preference at 83%, and the latter’s at 70%.
 
@@ -56,7 +58,6 @@ While “Liberal News” does a very good job of predicting party preference whe
 We learned with our supervised party preference modeling task that we could accurately predict the party of the preferred presidential candidate of survey respondents 75% of the time with our XGBoost model trained on 217 features, a significant improvement of 9% over the accuracy of the most predictive Aristotle-engineered feature. While the model performed significantly worse predicting party preference for the 224 individuals from the survey data set coded by Aristotle as “Non-Partisans” and “Unknowns” for party preference, an accuracy of 59% is still significantly better than a coin flip and provides Aristotle with a good starting point for attempting to predict party preference among that particularly challenging class of voters. A surprise finding was that 18% of our respondents with voter data from 2016-2022 indicated support for the opposite party of their most recent voter data on file. This suggests that there may be a significant error rate in the survey responses pulling our accuracy scores downwards since it seems unlikely that nearly a fifth of voters have switched their party allegiance in the last few years.   
 
 Another surprising finding was how similar the supervised party preference models performed on both the test set and the survey validation set (with the exception of the SVM model, which likely was corrupted by data leakage from the target variable). We were hopeful that the tree-based models would overcome the data leakage issue since the target variable leakage isn’t an exact match with any of the predictor variables, but is used in their construction, allowing the decision tree-based models to effectively weight and sort through the different features to find predictive combinations of features. It was a complete surprise however that the logistic regression model was just one percent less accurate than the best tree-based model on the survey validation dataset, especially when considering there were 605 total predictor features after one-hot encoding was applied in preprocessing. The fact that four different machine learning algorithms correctly predicted survey respondents’ party preference between 73-75% shows that there is a very strong signal for party preference within the data. 
-
 
 ### Full Report
 
