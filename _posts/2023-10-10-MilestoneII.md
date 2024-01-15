@@ -1,9 +1,9 @@
 ---
-title: "Building a Machine Learning Model to Accurately Predict Survey Respondents' Party Preference at 75%"
+title: "Building a Machine Learning Model to Predict Survey Respondents' Party Preference (75% Accuracy)"
 date: 2023-10-10
 published: true
 tags: [ machine learning, riley, schenck]
-excerpt: "As part of a research paper I co-authored with peers in my Master's of Applied Data Science" 
+excerpt: "Part of a research paper I co-authored with peers from my Master's of Applied Data Science" 
 
 toc: true
 toc_sticky: true
