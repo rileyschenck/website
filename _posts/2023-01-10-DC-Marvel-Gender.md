@@ -1,6 +1,6 @@
 ---
 title: "Visualizing Gender Representation in DC and Marvel Comics"
-date: 2023-07-10
+date: 2023-01-10
 published: true
 tags: [ marvel, dc, gender, altair]
 excerpt: "Throughout comic book history there are fewer 'good' female characters compared to men and even fewer 'bad' female characters."
