@@ -1,5 +1,5 @@
 ---
-title: "Visualizing Gender Representation in DC and Marvel Comics"
+title: "Visualizing Gender Representation in DC and Marvel Comics using Altair"
 date: 2023-01-10
 published: true
 tags: [ marvel, dc, gender, altair]
