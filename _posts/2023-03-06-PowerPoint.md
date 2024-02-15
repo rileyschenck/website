@@ -25,7 +25,7 @@ The report slidedeck (what the screenshot above is from) can be found at [https:
 
 ### Live Zoom PowerPoint Presentation
 
-You can find a video of my Zoom presentation that summarizes my technical report below (if the video is taking to long to load into the webpage you can find it on YouTube [here](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=42s&ab_channel=RileySchenck)):
+A slimmed down version of the technical report slideck was created for the live presentation given below (if the video is taking to long to load into the webpage you can find it on YouTube [here](https://www.youtube.com/watch?v=dg9_cwtIsqE&t=42s&ab_channel=RileySchenck)):
 
 {% include youtube.html id="dg9_cwtIsqE" %}
 
