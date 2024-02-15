@@ -21,7 +21,7 @@ I created the following technical report slidedeck and an accompanying PowerPoin
 
 ### Technical Report Slidedeck
 
-The technical report slidedeck can be found at [here](https://docs.google.com/presentation/d/1ONRH9LRi2XdkFAUeXH-zILzOdMf6TWcvuiRZ21udx-g/edit?usp=sharing). 
+The report slidedeck (what the screenshot above is from) can be found at [https://docs.google.com/presentation/d/1tCCRJayq7Fh68Ai2HBMp3eYst5PdHtgFPhKDFkl8o08/edit?usp=sharing](https://docs.google.com/presentation/d/1tCCRJayq7Fh68Ai2HBMp3eYst5PdHtgFPhKDFkl8o08/edit?usp=sharing). 
 
 ### Live Zoom PowerPoint Presentation
 
